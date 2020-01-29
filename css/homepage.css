@@ -1,0 +1,33 @@
+/* header section */
+.header{
+    height: 100vh;
+    background: red;
+    width: 100vw;
+    overflow: hidden;
+}
+.headerText{
+    width: 90vw;
+    margin: 0 5vw;
+    position: absolute;
+    color: white;
+    top: 40vh;
+}
+.hUnderLine{
+    width: 0;
+    height: 1px;
+    background: white;
+    margin: 0 auto 5vh auto;
+    animation: underline 1s linear 2s forwards;
+}
+
+
+/* animations */
+@keyframes underline {
+    0%{width: 0;}
+    100%{width: 95%;}
+}
+
+/* My philosophy section */
+.headshot{
+    width: 70vw;
+}

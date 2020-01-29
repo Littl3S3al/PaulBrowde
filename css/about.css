@@ -1,0 +1,13 @@
+.quote{
+    width: 10vw;
+}
+.inverted{
+    transform: rotateX(180deg);
+    transform: rotateZ(180deg);
+    float: right;
+    position: relative;
+}
+.arrowIcon{
+    width: 10%;
+    transform: translate(20%, -70%);
+}

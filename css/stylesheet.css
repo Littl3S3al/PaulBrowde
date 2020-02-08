@@ -144,11 +144,60 @@ a.white{
 .bn{
     width: 12vmin;
     border-radius: 7.5vmin;
-    margin: 5vw 0 0 57vw; 
+    margin: 5vw 0 0 80vw; 
+    z-index: 200;
+    position: fixed;
 }
 .bn:hover{
     cursor: pointer;
 }
+
+
+/* menu */
+
+.menuWrapper{
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 100vw;
+    transition: right 0.5s;
+    padding: 2%;
+    transition: left 0.5s;
+    padding: 0;
+}
+.menuItems{
+    margin-top: 15vh;
+    width: 80vw;
+}
+.menuList{
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+}
+.menuList li{
+    padding: 10px 0 10px 10vw;
+    margin: 1px 0 1px 0;
+}
+.menuList li:hover{
+    background: #f27080; 
+}
+.menuList li a{
+    color: white;
+}
+.menuList li a:focus{
+ text-decoration: none;
+}
+.menuList li a:hover{
+    text-decoration: none;
+   }
+
+
 
 /* footer */
 .footer{

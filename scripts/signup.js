@@ -44,10 +44,13 @@ form.addEventListener('submit', e => {
         email: form.email.value,
         date: firebase.firestore.Timestamp.fromDate(now)
     };
+
     db.collection('mailingList').add(subscriber).then(() => {
-        console.log('subscriber added');
+        // console.log('subscriber added');
     }).catch(err => {
-        console.log(err);
-    })
+        // console.log(err);
+    });
+
+    // need to send an email using node.js
 })
 

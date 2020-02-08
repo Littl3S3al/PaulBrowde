@@ -190,7 +190,7 @@
         <div class="signup">
             <h2>SIGN UP FOR MY NEWSLETTER</h2>
             <div class="text-center w-100 my-3">
-                <a href="#" class="btn btn-pink">SIGN UP</a>
+                <a href="javascript: void(0)" class="btn btn-pink signup">SIGN UP</a>
             </div>
         </div>
         <!-- line -->
@@ -238,15 +238,61 @@
     </div>
 
 
+    <!-- sign up popup -->
+    <div class="popupWrapper d-none">
+        <div class="popup pink text-center">
+            <h2 class="text-white">SIGN UP FOR MY NEWSLETTER</h2>
+            <p class="text-white">
+                In my monthly newsletter, I share my inspirations, insights and information on where to find me next.
+            </p>
+            <form>
+                <input type="text" name="name" value="Your name" required>
+                <input type="text" name="email" value="Your email address" required>
+                <input type="submit" value="SUBMIT" class="btn btn-lavenderGrey">
+            </form>
+            <a class="black signupCancel" href="javascript: void(0)">no thanks, not today</a>
+        </div>
+    </div>
+
+
     <!-- scripts -->
     <!-- bootstraps:  jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+    <!-- firestore database -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCUEVqyL9BHp7JgHBksbOnnt9LUrPU8CeI",
+        authDomain: "paul-browde-mailing-list.firebaseapp.com",
+        databaseURL: "https://paul-browde-mailing-list.firebaseio.com",
+        projectId: "paul-browde-mailing-list",
+        storageBucket: "paul-browde-mailing-list.appspot.com",
+        messagingSenderId: "286955509652",
+        appId: "1:286955509652:web:69ab5f7bd4401984ffe181",
+        measurementId: "G-BY4WBEL20F"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    const db = firebase.firestore();
+    </script>
+
     <!-- nav bar -->
     <script src="scripts/navbar.js"></script>
     <!-- footer -->
     <script src="scripts/footer.js"></script>
+    <!-- sign up -->
+    <script src="scripts/signup.js"></script>
 </body>
 </html>

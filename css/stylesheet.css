@@ -137,6 +137,10 @@ a.card, a.card:active, a.card:hover, a.card:focus, a.card:visited{
     position: absolute;
     top: -10vh;
 }
+/* lists */
+.noBullets{
+    list-style-type: none;
+}
 
 
 

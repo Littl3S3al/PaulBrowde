@@ -87,6 +87,9 @@ a.black{
     color: black;
     text-decoration: none;
 }
+.spacer {
+    height: 15vh;
+}
 
 /* buttons */
 .btn{
@@ -121,6 +124,18 @@ a.black{
     width: 100%;
     text-align: left;
     border-radius: 0;
+}
+
+/* cards */
+a.card, a.card:active, a.card:hover, a.card:focus, a.card:visited{
+    color: black;
+    text-decoration: none;
+}
+
+/* breadcrumbs */
+.breadcrumb{
+    position: absolute;
+    top: -10vh;
 }
 
 
@@ -223,13 +238,15 @@ a.black{
     position: fixed;
     top: 0;
     z-index: 2;
-    margin: 8vw 0 0 32vw;
+    width: 100vw;
+    margin: 8vw 0 0 0;
 }
 .pageHeader2Line{
     position: fixed;
     top: 0;
     z-index: 2;
-    margin: 6vw 0 0 32vw;
+    width: 100vw;
+    margin: 6vw 0 0 3vw;
 }
 
 

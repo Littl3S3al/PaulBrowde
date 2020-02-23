@@ -313,6 +313,10 @@
     <!-- images -->
     <script src="scripts/images.js"></script>
     <script>
+        const aboutImage = document.querySelector('.aboutImage');
+        const aboutDesktop = "assets/images/PB_couplesSession_Desktop.jpg";
+        const aboutMobile = "assets/images/PB_couplesSession.jpg";
+
         imageResize(aboutImage, aboutDesktop, aboutMobile);
 
         $(window).resize(() => {

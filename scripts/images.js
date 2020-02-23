@@ -1,16 +1,20 @@
-const aboutImage = document.querySelector('.aboutImage');
 
-const imageResize = () => {
+// about page
+const aboutImage = document.querySelector('.aboutImage');
+const aboutDesktop = "assets/images/PB_couplesSession_Desktop.jpg";
+const aboutMobile = "assets/images/PB_couplesSession.jpg";
+// therapy page
+const therapyImage = document.querySelector('.therapyImage');
+const therapyDesktop = "assets/images/PBrowde_intimateCouplesSession_Desktop.jpg";
+const therapyMobile = "assets/images/PBrowde_intimateCouplesSession.jpg";
+
+const imageResize = (image, desktopSrc, mobileSrc) => {
     if(screen.width >=1200){
-        aboutImage.src = "assets/images/PB_couplesSession_Desktop.jpg";
-        aboutImage.style.width = '100vw'
+        image.src = desktopSrc;
+        image.style.width = '100vw'
     } else if(screen.width < 1200){
-        aboutImage.src = "assets/images/PB_couplesSession.jpg";
+        image.src = mobileSrc;
     };
 }
 
-imageResize();
 
-$(window).resize(function() {
-    imageResize();
-});

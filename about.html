@@ -312,5 +312,12 @@
     <script src="scripts/accordian.js"></script>
     <!-- images -->
     <script src="scripts/images.js"></script>
+    <script>
+        imageResize(aboutImage, aboutDesktop, aboutMobile);
+
+        $(window).resize(() => {
+            imageResize(aboutImage, aboutDesktop, aboutMobile);
+        });
+    </script>
 </body>
 </html>

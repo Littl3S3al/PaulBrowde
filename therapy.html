@@ -227,6 +227,10 @@
     <!-- images -->
     <script src="scripts/images.js"></script>
     <script>
+        const therapyImage = document.querySelector('.therapyImage');
+        const therapyDesktop = "assets/images/PBrowde_intimateCouplesSession_Desktop.jpg";
+        const therapyMobile = "assets/images/PBrowde_intimateCouplesSession.jpg";
+        
         imageResize(therapyImage, therapyDesktop, therapyMobile);
         $(window).resize(() => {
             imageResize(therapyImage, therapyDesktop, therapyMobile);

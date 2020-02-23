@@ -19,6 +19,10 @@
     animation: underline 1s linear 2s forwards;
 }
 
+/* My philosophy section */
+.headshot{
+    width: 70vw;
+}
 
 /* animations */
 @keyframes underline {
@@ -26,7 +30,79 @@
     100%{width: 95%;}
 }
 
-/* My philosophy section */
-.headshot{
-    width: 70vw;
+
+
+
+
+/* media queries */
+
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .headshot{
+        width: 40vw;
+    }
 }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    /* hero section */
+    .headerText{
+        width: 70vw;
+        margin: 0 15vw;
+        top: 40vh;
+    }
+    .hUnderLine{
+        margin: 0 auto 1vh auto;
+    }
+
+    /* My philosophy section */
+    .headshot{
+        width: 30vw;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    /* video */
+    video.hero{
+        height:80vh;
+    }
+
+    /* header section */
+    .header{
+        height: 80vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    /* video */
+    video.hero{
+        height:100vh;
+    }
+    /* header section */
+    .header{
+        height: 100vh;
+        width: 100vw;
+    }
+    /* hero section */
+    .headerText{
+        width: 50vw;
+        margin: 0 25vw;
+    }
+
+    /* My philosophy section */
+    .headshot{
+        width: 15vw;
+    }
+
+    /* interlude image */
+    .interludeImage{
+        display:none;
+    }
+ }

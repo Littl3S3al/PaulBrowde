@@ -30,7 +30,12 @@ form.addEventListener('submit', e => {
         <h2 class="text-white">Thanks, ${form.name.value}!</h2>
         <p class="text-white">You will receive an email confirming your subscription shortly.</p>
     `;
-    popup.style.paddingTop = '25vh';
+    if(screen.width < 1200){
+        popup.style.paddingTop = '25vh';
+    } else{
+        popup.style.paddingTop = '20vh';
+    };
+    
     setTimeout(() => {
         popupWrapper.classList.add('d-none');
     }, 2000);

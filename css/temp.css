@@ -1,0 +1,25 @@
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+}
+
+/* Small devices on landscape view*/
+@media (min-width: 576px) and (orientation: landscape) { 
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {   
+}
+
+/* Medium devices landscape (tablets, 768px and up) */
+@media (min-width: 1024px) and (orientation : landscape){ 
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+}

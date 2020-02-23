@@ -1,5 +1,5 @@
 /* some overall rules:
-rows with text ßmust have a p-5
+rows with text must have a p-5
 text boxes should be given a my-3
  */
 
@@ -323,12 +323,34 @@ No media query for `xs` since this is the default in Bootstrap */
     }
  }
 
+ /* Small devices on landscape view*/
+ @media (min-width: 576px) and (orientation: landscape) { 
+    /* sign up pop up */
+    .popup{
+        margin: 5vh 5vmin;
+        padding: 5vh 15vmin;
+        height:90vh;
+    }
+ }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
     .p-5{
         padding-left: 17vw!important;
         padding-right: 17vw!important;
     }
+
+    /* secondary page: headers */
+    .pageHeader{
+        margin: 6vw 0 0 0;
+        font-size: 1.5em;
+    }
+    /* .pageHeader2Line{
+        position: fixed;
+        top: 0;
+        z-index: 2;
+        width: 100vw;
+        margin: 6vw 0 0 3vw;
+    } */
 
     /* nav bar */
     .nav{
@@ -350,7 +372,7 @@ No media query for `xs` since this is the default in Bootstrap */
     }
 
     /* buttons */
-    .btn{
+    .btn-light,.btn-grey, .btn-pink, .btn-lavenderGrey{
         width: 50%;
     }
 
@@ -386,6 +408,12 @@ No media query for `xs` since this is the default in Bootstrap */
         margin: 7.5vh 10vmin;
         padding: 10vh 15vmin;
         height:85vh;
+    }
+
+    /* secondary page: headers */
+    .pageHeader{
+        margin: 4vw 0 0 0;
+        font-size: 1.5em;
     }
 }
 

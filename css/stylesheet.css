@@ -22,7 +22,7 @@ body{
 }
 
 /* display settings */
-.hideonMobile, .hideonAllMobile{
+.hideonMobile, .hideonAllMobile, .hideonMobileNav{
     display:none;
 }
 
@@ -199,6 +199,8 @@ a.card, a.card:active, a.card:hover, a.card:focus, a.card:visited{
 }
 
 
+
+
 /* menu */
 
 .menuWrapper{
@@ -361,6 +363,9 @@ No media query for `xs` since this is the default in Bootstrap */
     .hideonMobile{
        display: flex;
     }
+    .hideonMobileNav{
+        display: inline-block;
+    }
     .hideOnTabletUp{
         display: none;
     }
@@ -401,9 +406,22 @@ No media query for `xs` since this is the default in Bootstrap */
         width: Calc(8vmin*1.7);
         margin: 3vw 0 0 5vw;
     }
-    .bn{
+    .pagehead{
+        position: fixed;
+        height: 8vmin;
+        width: auto;
+        right: 0;
+        margin-top: 3vw;
+        z-index:200;
+    }
+    .bnTablet{
         width: 8vmin;
-        margin: 3vw 0 0 87vw; 
+        border-radius: 7.5vmin;
+        margin-right: 15px;
+    }
+    .pagename{
+        padding: 0 10px 0 30px;
+        border-radius: 50px 0 0 50px;
     }
 
     /* menu */
@@ -496,6 +514,22 @@ No media query for `xs` since this is the default in Bootstrap */
         width: 6vmin;
         margin: 1vw 0 0 93vw; 
     }
+    .pagehead{
+        height: 6vmin;
+        margin-top: 1vw;
+    }
+    .bnTablet{
+        width: 6vmin;
+    }
+    .pagename{
+        padding: 0 10px 0 30px;
+        border-radius: 50px 0 0 50px;
+    }
+
+    
+
+
+
     /* menu */
     .menuWrapper{
         width: 50vw;

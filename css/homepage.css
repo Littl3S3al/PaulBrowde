@@ -19,10 +19,49 @@
     animation: underline 1s linear 2s forwards;
 }
 
+
 /* My philosophy section */
 .headshot{
-    width: 70vw;
+    width: 100%;
+    margin-bottom: 10%;
 }
+.headshotFrame{
+    margin: auto;
+}
+
+
+
+
+
+/* layered sections */
+.layer{
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+}
+.layer1{
+    height: 50vh;
+    padding: 0;
+    overflow: hidden;
+}
+.layer-1-image{
+    min-width: 100%;
+    min-height: 100%;
+}
+.layer2{
+    transform: translate(47vw, 10vh);
+    position: absolute;
+}
+.layer3{
+    padding: 2% 5% 2% 5%;
+    transform: translate(35vw, 30vh);
+    position: absolute;
+}
+.layer4{
+    height: 15vh;
+}
+
+
+
+
 
 /* animations */
 @keyframes underline {
@@ -41,9 +80,7 @@ No media query for `xs` since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    .headshot{
-        width: 40vw;
-    }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -58,9 +95,28 @@ No media query for `xs` since this is the default in Bootstrap */
         margin: 0 auto 1vh auto;
     }
 
-    /* My philosophy section */
-    .headshot{
-        width: 30vw;
+    /* my philosophy section */
+    .headshotFrame{
+        margin: 0;
+    }
+
+    /* my offering */
+    .pod-inner{
+        height: 30vh;
+    }
+    .pod{
+        margin-bottom: 30px;
+    }
+}
+
+/* Medium devices or large landscape phones (tablets, 768px and up) */
+@media (min-width: 768px) and (orientation: landscape) { 
+    /* my offering */
+    .pod-inner{
+        height: 100vh;
+    }
+    .pod{
+        margin-bottom: 30px;
     }
 }
 
@@ -68,7 +124,7 @@ No media query for `xs` since this is the default in Bootstrap */
 @media (min-width: 992px) { 
     /* video */
     video.hero{
-        height:80vh;
+        min-height:80vh;
     }
 
     /* header section */
@@ -77,18 +133,32 @@ No media query for `xs` since this is the default in Bootstrap */
         width: 100vw;
         overflow: hidden;
     }
+    
+     /* my offering */
+     .pod-inner{
+        height: 45vh;
+    }
+ }
+
+ /* Large devices landscape */
+ @media (min-width: 992px) and (orientation: landscape) {
+     /* my offering */
+     .pod-inner{
+        height: 80vh;
+    }
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
     /* video */
     video.hero{
-        height:100vh;
+        min-width: 100vw;
+        min-height: 100vh;
     }
     /* header section */
     .header{
-        height: 100vh;
         width: 100vw;
+        height: 100vh;
     }
     /* hero section */
     .headerText{
@@ -96,13 +166,10 @@ No media query for `xs` since this is the default in Bootstrap */
         margin: 0 25vw;
     }
 
-    /* My philosophy section */
-    .headshot{
-        width: 15vw;
-    }
-
-    /* interlude image */
-    .interludeImage{
-        display:none;
+    /* my offering */
+    .pod-inner{
+        height: 40vh;
     }
  }
+
+ 

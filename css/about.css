@@ -17,6 +17,32 @@
     padding: 20px;
 }
 
+/* layered sections */
+.layer{
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+}
+.layer1{
+    height: 50vh;
+    padding: 0;
+    overflow: hidden;
+}
+.layer-1-image{
+    min-width: 100%;
+    min-height: 100%;
+}
+.layer2{
+    transform: translate(47vw, 20vh);
+    position: absolute;
+}
+.layer3{
+    padding: 2% 5% 2% 5%;
+    transform: translate(35vw, 40vh);
+    position: absolute;
+}
+.layer4{
+    height: 15vh;
+}
+
 
 
 /* media queries */
@@ -35,26 +61,53 @@ No media query for `xs` since this is the default in Bootstrap */
 @media (min-width: 768px) { 
     .arrowIcon{
         width: 8%;
-        
     }
+
+     /* my core beliefs */
+    .pod{
+        margin-bottom: 30px;
+    }
+    .workDes{
+        height: 40vh;
+    }
+}
+
+/* Medium devices or large landscape phones (tablets, 768px and up) */
+@media (min-width: 768px) and (orientation: landscape) { 
+    .workDes{
+        height: 110vh;
+    }
+
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {   
-    
+    .workDes{
+        height: 60vh;
+    }
+
 }
- /* Medium devices landscape (tablets, 768px and up) */
-@media (min-width: 1024px) and (orientation : landscape){ 
+
+/* Large devices landscape */
+@media (min-width: 992px) and (orientation: landscape) {
+
+    .workDes{
+        height: 110vh;
+    }
 }
+
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
     .quote{
-        width: 4vw;
-        margin: 0 10vw;
+        width: 3vw;
+        margin: 0 1vw;
     }
     .arrowIcon{
         width: 4%;
         margin-left: 5vw;
+    }
+    .workDes{
+        height: 35vh;
     }
  }

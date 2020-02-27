@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Paul Browde: Blog and news</title>
+    <title>Paul Browde: News</title>
 
 
     <!-- Bootstrap CSS -->
@@ -14,6 +14,7 @@
 
     <!-- Custom stylesheets -->
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/news.css">
 
     <!--animate.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
@@ -21,13 +22,22 @@
 <body>
 
     <!-- nav bar -->
-    <div class="nav" style="background: none">
+    <div class="nav">
         <div class="brand">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.23 124"><defs><style>.logoBg{fill:#f27080;}.logo{fill:#fff;}</style></defs><title>PB_logo</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><rect class="logoBg" width="212.23" height="124" rx="62"/><path class="logo" d="M69.25,25a52.51,52.51,0,0,0,0,74,52.14,52.14,0,0,0,89-37,52.09,52.09,0,0,0-89-37Zm23.37-9a17.73,17.73,0,0,0,11.32,29v8.19L84.69,40.4,62.84,54.87h-4A48.07,48.07,0,0,1,92.62,16Zm13.5-2A13.35,13.35,0,1,1,92.83,27.37,13.33,13.33,0,0,1,106.12,14ZM70.75,54.87l13.94-9.24,13.94,9.24ZM58.34,62c0-.93,0-1.85.08-2.76h45.52V78.63L83,104A48,48,0,0,1,58.34,62ZM87,106l19.09-23L125.19,106A47.54,47.54,0,0,1,87,106Zm42.23-2L108.29,78.76V59.24h45.53c.05.91.08,1.83.08,2.76A48,48,0,0,1,129.2,104Zm24.17-49.13H108.29V45a17.74,17.74,0,0,0,11.33-29A48.06,48.06,0,0,1,153.37,54.87Z"/></g></g></svg>
         </div>
     </div>
-    <div class="bn">
+    <div class="bn hideOnTabletUp">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 124"><defs><style>.bnBg{fill:#676c76;}.bnLines{fill:#fff;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:6px;}</style></defs><title>PB_bn</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><circle class="bnBg" cx="62" cy="62" r="62"/><line class="bnLines" x1="15.5" y1="48.5" x2="108.5" y2="48.5"/><line class="bnLines" x1="15.5" y1="64.76" x2="108.5" y2="64.76"/><line class="bnLines" x1="15.5" y1="82.5" x2="108.5" y2="82.5"/></g></g></svg>
+    </div>
+
+    <div class="pagehead hideonMobile">
+        <div class="bnTablet">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 124"><defs><style>.bnBg{fill:#676c76;}.bnLines{fill:#fff;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:6px;}</style></defs><title>PB_bn</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><circle class="bnBg" cx="62" cy="62" r="62"/><line class="bnLines" x1="15.5" y1="48.5" x2="108.5" y2="48.5"/><line class="bnLines" x1="15.5" y1="64.76" x2="108.5" y2="64.76"/><line class="bnLines" x1="15.5" y1="82.5" x2="108.5" y2="82.5"/></g></g></svg>
+        </div>
+        <div class="pagename pink d-flex align-items-center text-white">
+            <h2>news</h2>
+        </div>
     </div>
 
     <!-- menu -->
@@ -38,14 +48,13 @@
                 <li><a href="about.html">about me</a></li>
                 <li><a href="therapy.html">therapy</a></li>
                 <li><a href="storytelling.html">storytelling and speaking</a></li>
-                <li class="active pink"><a href="news.html">blog and news</a></li>
-                <li><a href="events.html">events</a></li>
+                <li class="active pink"><a href="news.html">news</a></li>
                 <li><a href="contact.html">get in touch</a></li>
             </ul>
         </div>
     </div>
 
-    <div class="text-black text-center pageHeader">
+    <div class="text-white text-center pageHeader hideOnTabletUp">
         <h2>NEWS</h2>
     </div>
 
@@ -53,12 +62,14 @@
     <!-- body section -->
     <div class="container-fluid">
         <div class="row spacer"></div>
-        <div class="row" style="flex-wrap: wrap;">
+
+        <!-- news mobile view -->
+        <div class="row hideOnTabletUp" style="flex-wrap: wrap;">
             <div class="col-12 col-md-6" style="display: flex;">
                 <a href="article/power-of-nature.html" class="card p-2 m-2 text-center">
                     <h2>THE POWER OF NATURE</h2>
                     <img src="assets/images/thePowerofNature.jpg" alt="A nature scene" class="my-3" width="100%" height="auto">
-                    <p class="text-left">In his book Soul Craft Bill Plotkin says that the source of our suffering is that we have lost connection with our wildness. We have forgotten that we are part of nature, not separate from it. To remind myself, I participated in a weeklong wilderness experience.... </p>
+                    <p class="text-left">In his book Soul Craft Bill Plotkin says that the source of our suffering is that we have lost connection with our wildness. We have forgotten that we are part of nature, not separate from it. To remind myself, I participated in a weeklong wilderness experience...</p>
             </a>
             </div>
 
@@ -87,6 +98,65 @@
                 </a>
             </div>
         </div>
+
+        <!-- news tablet and up view -->
+        <!-- ARTICLE 1 -->
+        <div class="row p-5">
+            <div class="col-5 col-xl-3"> 
+                <a href="article/power-of-nature.html" class="newsImageHolder d-flex align-items-center justify-content-center">  
+                    <img src="assets/images/thePowerofNature.jpg" alt="A nature scene" class="newsImage">
+                </a>
+            </div>
+            <div class="col-7 col-xl-9">
+                <h2>THE POWER OF NATURE</h2>
+                <p class="text-left">In his book Soul Craft Bill Plotkin says that the source of our suffering is that we have lost connection with our wildness. We have forgotten that we are part of nature, not separate from it. To remind myself, I participated in a weeklong wilderness experience... </p>
+                <a href="article/power-of-nature.html">READ MORE</a>
+            </div>  
+        </div>
+
+        <!-- ARTICLE 2 -->
+        <div class="row p-5">
+            <div class="col-5 col-xl-3"> 
+                <a href="article/holotropic-breath.html" class="newsImageHolder d-flex align-items-center justify-content-center">  
+                    <img src="assets/images/holotropicBreath.jpg" alt="Holotropic graphic" class="newsImage">
+                </a>
+            </div>
+            <div class="col-7 col-xl-9">
+                <h2>HOLOTROPIC BREATH</h2>
+                <p class="text-left">There is an explosion of people interested in working with psychedelics as therapeutic medications.<br><br>There is much research underway, showing promise for the use of MDMA for Post Traumatic Stress disorder, and Psilocybin for Cancer related anxiety...</p>
+                <a href="article/holotropic-breath.html">READ MORE</a>
+            </div>  
+        </div>
+
+        <!-- ARTICLE 3 -->
+        <div class="row p-5">
+            <div class="col-5 col-xl-3"> 
+                <a href="article/micro-affections.html" class="newsImageHolder d-flex align-items-center justify-content-center"> 
+                    <img src="assets/images/microAffections.jpg" alt="Many Micro Affections" class="newsImage">
+                </a>
+            </div>
+            <div class="col-7 col-xl-9">
+                <h2>MICRO AFFECTIONS</h2>
+                <p class="text-left">Couples seek therapy because things are not going so well. There are problems or difficulties for which they want help. Often, each has complaints about the other, with the idea that if the other could change, even a little, things would get better...</p>
+                <a href="article/micro-affections.html">READ MORE</a>
+            </div>  
+        </div>
+
+        <!-- ARTICLE 4 -->
+        <div class="row p-5">
+            <div class="col-5 col-xl-3"> 
+                <a href="article/why-stories.html" class="newsImageHolder d-flex align-items-center justify-content-center">
+                    <img src="assets/images/whyStories.jpg" alt="Two people abstract" class="newsImage">
+                </a>
+            </div>
+            <div class="col-7 col-xl-9">
+                <h2>WHY STORIES</h2>
+                <p class="text-left">Stories allow you to be known.  There are things about your life that have happened to you, and only to you. By telling these stories others come to know you and to understand your unique experience...</p>
+                <a href="article/why-stories.html">READ MORE</a>
+            </div>  
+        </div>
+
+
         <div class="row spacer"></div>
     </div>
 
@@ -131,8 +201,7 @@
             <a href="about.html">about me</a><br>  
             <a href="therapy.html">therapy</a><br>
             <a href="storytelling.html">storytelling and speaking</a><br>
-            <a href="news.html" class="active">blog and news</a><br>
-            <a href="events.html">events</a><br>
+            <a href="news.html" class="active">news</a><br>
             <a href="contact.html">contact me</a><br>
         </div>
         <!-- line -->

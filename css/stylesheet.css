@@ -22,7 +22,7 @@ body{
 }
 
 /* display settings */
-.hideonMobile, .hideonAllMobile, .hideonMobileNav{
+.hideonMobile, .hideonAllMobile, .hideonAllMobile2 {
     display:none;
 }
 
@@ -448,6 +448,13 @@ No media query for `xs` since this is the default in Bootstrap */
     .popup form input{
         margin: 5px 0;
     }
+    .roundImage{
+        width: 45vw;
+        height: 45vw;
+        border-radius: 22.5vw;
+        overflow: hidden;
+        margin-top: 10vh;
+    }
     
 }
 
@@ -478,6 +485,14 @@ No media query for `xs` since this is the default in Bootstrap */
         margin: 3vw 0 0 3vw;
         font-size: 1em;
     }
+
+    /* round image */
+    .roundImage{
+        width: 25vw;
+        height: 25vw;
+        border-radius: 22.5vw;
+        margin-top: 5vh;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -490,6 +505,10 @@ No media query for `xs` since this is the default in Bootstrap */
     .hideonAllMobile{
         display: flex;
     }
+    .hideonAllMobile2{
+        display: block;
+    }
+
     /* fonts */
     body{
         font-size: 1.2em;;
@@ -499,6 +518,11 @@ No media query for `xs` since this is the default in Bootstrap */
     }
     h2.elite{
         font-size: 2.5em;
+    }
+
+    /* columned text */
+    .columns-3{
+        column-count: 3;
     }
 
 

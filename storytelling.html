@@ -14,6 +14,8 @@
 
     <!-- Custom stylesheets -->
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/storytelling.css">
+
 
     <!--animate.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
@@ -21,13 +23,22 @@
 <body>
 
      <!-- nav bar -->
-     <div class="nav">
+    <div class="nav">
         <div class="brand">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.23 124"><defs><style>.logoBg{fill:#f27080;}.logo{fill:#fff;}</style></defs><title>PB_logo</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><rect class="logoBg" width="212.23" height="124" rx="62"/><path class="logo" d="M69.25,25a52.51,52.51,0,0,0,0,74,52.14,52.14,0,0,0,89-37,52.09,52.09,0,0,0-89-37Zm23.37-9a17.73,17.73,0,0,0,11.32,29v8.19L84.69,40.4,62.84,54.87h-4A48.07,48.07,0,0,1,92.62,16Zm13.5-2A13.35,13.35,0,1,1,92.83,27.37,13.33,13.33,0,0,1,106.12,14ZM70.75,54.87l13.94-9.24,13.94,9.24ZM58.34,62c0-.93,0-1.85.08-2.76h45.52V78.63L83,104A48,48,0,0,1,58.34,62ZM87,106l19.09-23L125.19,106A47.54,47.54,0,0,1,87,106Zm42.23-2L108.29,78.76V59.24h45.53c.05.91.08,1.83.08,2.76A48,48,0,0,1,129.2,104Zm24.17-49.13H108.29V45a17.74,17.74,0,0,0,11.33-29A48.06,48.06,0,0,1,153.37,54.87Z"/></g></g></svg>
         </div>
     </div>
-    <div class="bn">
+    <div class="bn hideOnTabletUp">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 124"><defs><style>.bnBg{fill:#676c76;}.bnLines{fill:#fff;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:6px;}</style></defs><title>PB_bn</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><circle class="bnBg" cx="62" cy="62" r="62"/><line class="bnLines" x1="15.5" y1="48.5" x2="108.5" y2="48.5"/><line class="bnLines" x1="15.5" y1="64.76" x2="108.5" y2="64.76"/><line class="bnLines" x1="15.5" y1="82.5" x2="108.5" y2="82.5"/></g></g></svg>
+    </div>
+
+    <div class="pagehead hideonMobile">
+        <div class="bnTablet">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 124"><defs><style>.bnBg{fill:#676c76;}.bnLines{fill:#fff;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:6px;}</style></defs><title>PB_bn</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><circle class="bnBg" cx="62" cy="62" r="62"/><line class="bnLines" x1="15.5" y1="48.5" x2="108.5" y2="48.5"/><line class="bnLines" x1="15.5" y1="64.76" x2="108.5" y2="64.76"/><line class="bnLines" x1="15.5" y1="82.5" x2="108.5" y2="82.5"/></g></g></svg>
+        </div>
+        <div class="pagename pink d-flex align-items-center text-white">
+            <h2>storytelling & speaking</h2>
+        </div>
     </div>
 
 
@@ -39,28 +50,35 @@
                 <li><a href="about.html">about me</a></li>
                 <li><a href="therapy.html">therapy</a></li>
                 <li class="active pink"><a href="storytelling.html">storytelling and speaking</a></li>
-                <li><a href="news.html">blog and news</a></li>
-                <li><a href="events.html">events</a></li>
+                <li><a href="news.html">news</a></li>
                 <li><a href="contact.html">get in touch</a></li>
             </ul>
         </div>
     </div>
 
-    <div class="text-white text-center pageHeader2Line">
+    <div class="text-white text-center pageHeader2Line hideOnTabletUp">
         <h2><span style="font-size: 0.7em">SPEAKING &<br>STORYTELLING</span></h2>
     </div>
 
     
     <!-- body section -->
     <div class="container-fluid">
+        
+        <!-- header image -->
         <div class="row">
-            <div>
+            <div class="hideOnTabletUp">
                 <img src="assets/images/PBrowde_Storytelling.jpg" alt="Paul Browde in a couples guidance session" class="storyImage" width="100%">
             </div>
+            <div class="hideonMobile col-12 mb-5">
+                <div class="mx-auto roundImage d-flex align-items-center justify-content-center">
+                    <img src="assets/images/PBrowde_Storytelling.jpg" alt="Paul Browde in a couples guidance session" class="therapyImage" width="150%" >
+                </div>
+            </div>
+            
         </div>
 
-        <!-- projects -->
-        <div class="row grey text-white p-5">
+        <!-- projects FOR MOBILE-->
+        <div class="row grey text-white p-5 hideOnTabletUp">
             <div class="text-center col-12 w-100 my-3">
                 <h2>PROJECTS:</h2>
                 <hr class="white">
@@ -121,10 +139,85 @@
             </div>
         </div>
 
+        <!-- CORE BELIEFS FOR TABLET AND UP -->
+        <div class="hideonMobile row GREY px-5">
+            <div class="col-12 py-5 text-white text-center">
+                <h2>MY PROJECTS</h2>
+                <hr class="white">
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 d-flex align-items-stretch">
+                <div class="pod rounded navy p-5 text-white">
+                    <div class="pod-inner">
+                        <h3>EVRYMAN</h3>
+                        <br>
+                        <p>
+                            I’m a strategic advisor to EVRYMAN, an organization that guides men in emotional leadership and wellness.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-4 d-flex align-items-stretch">
+                <div class="pod rounded teal p-5 text-white">
+                    <div class="pod-inner">
+                        <h3>NARRATIVE MEDICINE</h3>
+                        <br>
+                        <p>
+                            Alongside colleagues at Columbia University’s Narrative Medicine program, I teach radical listening as a way of facilitating communication across divides.
+                            <br><br>
+                            <a class="white" href="#">Read more here</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-4 d-flex align-items-stretch">
+                <div class="pod rounded lavenderGrey p-5 text-white">
+                    <div class="pod-inner">
+                        <h3>NARATIV</h3>
+                        <br>
+                        <p>
+                            I co-founded Narativ, a company that teaches people to excavate, craft and tell their own personal stories. 
+                            <br><br>
+                            <a class="white" href="#">Read more here</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-4 d-flex align-items-stretch">
+                <div class="pod rounded pink p-5 text-white">
+                    <div class="pod-inner">
+                        <h3>ADVOCACY</h3>
+                        <br>
+                        <p>
+                            In collaboration with the Open Society Foundations over the past ten years I have taught listening, and storytelling, as advocacy tools to marginalized groups, including sex workers, people with intellectual disabilities, recipients of oral substitution therapy, Roma doctors and AIDS activists in Eastern Europe, Africa and North America.  
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-4 d-flex align-items-stretch">
+                <div class="pod rounded navy p-5 text-white">
+                    <div class="pod-inner">
+                        <h3>THE NEW YORK COLLECTIVE FOR NARRATIVE THERAPIES </h3>
+                        <br>
+                        <p>
+                            I co-founded the New York Narrative Collective; a group of therapists whose work is informed by the ethics of narrative therapy. We offer clinical services and narrative supervision.	
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
         <!-- speaking engagements -->
-        <div class="row p-5">
+        <div class="row p-5 hideonDesktop">
             <div class="text-center col-12 w-100 my-3">
-                <h2>SPEAKING ENGAGEMENTS::</h2>
+                <h2>SPEAKING ENGAGEMENTS:</h2>
                 <hr class="black">
             </div>            
             <div class="col-12">
@@ -149,7 +242,37 @@
             </div>
         </div>
 
-        <div class="row navy p-5 text-white">
+        <!-- about me section for desktop -->
+        <div class="row hideonAllMobile p-5">
+            <div class="col-6 grey layer layer1 d-flex align-items-center justify-content-center">
+                <img src="assets/images/PB_speaking-at-conference.jpg" alt="Paul Browde speaking at a conference" class="layer-1-image">
+            </div>
+            <div class="col-6 pink layer layer3 text-white">
+                <div class="text-left">
+                    <h2>SPEAKING ENGAGEMENTS:</h2>
+                    <br>
+                    <p>
+                        My talks are a blend of my personal and professional experiences. I use my own life experience as a teaching tool. Topics include:
+                    </p>
+                    <ul>
+                        <li>Radical listening</li>
+                        <li>Use of personal stories in advocacy</li>
+                        <li>Men’s Emotional Leadership</li>
+                        <li>The Art of Connection</li>
+                        <li>The Toxicity of secrets</li>
+                        <li>Breaking down stigma</li>
+                        <li>Othering and belonging</li>
+                    </ul>
+                </div>
+                <div class="text-center w-100 mt-5">
+                    <h2>BOOK AN EVENT</h2>
+                    <a href="contact.html" class="btn btn-light">CONTACT ME</a>
+                </div>
+            </div>
+            <div class="col-12 layer4"></div>
+        </div>
+
+        <div class="row navy p-5 text-white hideonDesktop">
             <div class="col-12 text-center">
                 <h2>BOOK AN EVENT</h2>
                 <div class="text-center w-100 my-3">
@@ -202,8 +325,7 @@
             <a href="about">about me</a><br>  
             <a href="therapy.html">therapy</a><br>
             <a href="storytelling.html" class="active">storytelling and speaking</a><br>
-            <a href="news.html">blog and news</a><br>
-            <a href="events.html">events</a><br>
+            <a href="news.html">news</a><br>
             <a href="contact.html">contact me</a><br>
         </div>
         <!-- line -->
@@ -273,18 +395,5 @@
     <script src="scripts/footer.js"></script>
     <!-- sign up -->
     <script src="scripts/signup.js"></script>
-    <!-- images -->
-    <script src="scripts/images.js"></script>
-    <script>
-        const storyImage = document.querySelector('.storyImage');
-        const storyDesktop = "assets/images/PBrowde_Storytelling_Desktop.jpg";
-        const storyMobile = "assets/images/PBrowde_Storytelling.jpg";
-
-        imageResize(storyImage, storyDesktop, storyMobile);
-
-        $(window).resize(() => {
-            imageResize(storyImage, storyDesktop, storyMobile);
-        });
-    </script>
 </body>
 </html>

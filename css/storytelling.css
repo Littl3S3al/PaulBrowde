@@ -1,0 +1,25 @@
+.pod{
+        margin-bottom: 30px;
+    }
+
+.layer1{
+    height: 50vh;
+    padding: 0;
+    overflow: hidden;
+}
+.layer-1-image{
+    height: 100%;
+}
+.layer2{
+    transform: translate(47vw, 10vh);
+    position: absolute;
+}
+.layer3{
+    padding: 2% 5% 2% 5%;
+    transform: translate(35vw, 30vh);
+    position: absolute;
+}
+.layer4{
+    height: 40vh;
+    z-index:-100;
+}

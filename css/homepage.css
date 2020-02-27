@@ -43,8 +43,8 @@
     overflow: hidden;
 }
 .layer-1-image{
-    min-width: 100%;
-    min-height: 100%;
+    height: 100%;
+    width: auto;
 }
 .layer2{
     transform: translate(47vw, 10vh);

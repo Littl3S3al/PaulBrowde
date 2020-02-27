@@ -14,6 +14,7 @@
 
     <!-- Custom stylesheets -->
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/therapy.css">
 
     <!--animate.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
@@ -21,13 +22,22 @@
 <body>
 
      <!-- nav bar -->
-     <div class="nav">
+    <div class="nav">
         <div class="brand">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.23 124"><defs><style>.logoBg{fill:#f27080;}.logo{fill:#fff;}</style></defs><title>PB_logo</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><rect class="logoBg" width="212.23" height="124" rx="62"/><path class="logo" d="M69.25,25a52.51,52.51,0,0,0,0,74,52.14,52.14,0,0,0,89-37,52.09,52.09,0,0,0-89-37Zm23.37-9a17.73,17.73,0,0,0,11.32,29v8.19L84.69,40.4,62.84,54.87h-4A48.07,48.07,0,0,1,92.62,16Zm13.5-2A13.35,13.35,0,1,1,92.83,27.37,13.33,13.33,0,0,1,106.12,14ZM70.75,54.87l13.94-9.24,13.94,9.24ZM58.34,62c0-.93,0-1.85.08-2.76h45.52V78.63L83,104A48,48,0,0,1,58.34,62ZM87,106l19.09-23L125.19,106A47.54,47.54,0,0,1,87,106Zm42.23-2L108.29,78.76V59.24h45.53c.05.91.08,1.83.08,2.76A48,48,0,0,1,129.2,104Zm24.17-49.13H108.29V45a17.74,17.74,0,0,0,11.33-29A48.06,48.06,0,0,1,153.37,54.87Z"/></g></g></svg>
         </div>
     </div>
-    <div class="bn">
+    <div class="bn hideOnTabletUp">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 124"><defs><style>.bnBg{fill:#676c76;}.bnLines{fill:#fff;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:6px;}</style></defs><title>PB_bn</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><circle class="bnBg" cx="62" cy="62" r="62"/><line class="bnLines" x1="15.5" y1="48.5" x2="108.5" y2="48.5"/><line class="bnLines" x1="15.5" y1="64.76" x2="108.5" y2="64.76"/><line class="bnLines" x1="15.5" y1="82.5" x2="108.5" y2="82.5"/></g></g></svg>
+    </div>
+
+    <div class="pagehead hideonMobile">
+        <div class="bnTablet">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 124"><defs><style>.bnBg{fill:#676c76;}.bnLines{fill:#fff;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:6px;}</style></defs><title>PB_bn</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><circle class="bnBg" cx="62" cy="62" r="62"/><line class="bnLines" x1="15.5" y1="48.5" x2="108.5" y2="48.5"/><line class="bnLines" x1="15.5" y1="64.76" x2="108.5" y2="64.76"/><line class="bnLines" x1="15.5" y1="82.5" x2="108.5" y2="82.5"/></g></g></svg>
+        </div>
+        <div class="pagename pink d-flex align-items-center text-white">
+            <h2>therapy</h2>
+        </div>
     </div>
 
 
@@ -40,13 +50,12 @@
                 <li class="active pink"><a href="therapy.html">therapy</a></li>
                 <li><a href="storytelling.html">storytelling and speaking</a></li>
                 <li><a href="news.html">blog and news</a></li>
-                <li><a href="events.html">events</a></li>
                 <li><a href="contact.html">get in touch</a></li>
             </ul>
         </div>
     </div>
 
-    <div class="text-white text-center pageHeader">
+    <div class="text-white text-center pageHeader hideOnTabletUp">
         <h2>THERAPY</h2>
     </div>
 
@@ -54,13 +63,46 @@
     <!-- body section -->
     <div class="container-fluid">
         <div class="row">
-            <div>
+            <div class="hideOnTabletUp">
                 <img src="assets/images/PBrowde_intimateCouplesSession.jpg" alt="Paul Browde in a couples guidance session" class="therapyImage" width="100%" >
+            </div>
+            <div class="hideonMobile col-12">
+                <div class="mx-auto roundImage d-flex align-items-center justify-content-center">
+                    <img src="assets/images/PBrowde_intimateCouplesSession.jpg" alt="Paul Browde in a couples guidance session" class="therapyImage" width="150%" >
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- couples therapy -->
+        <div class="row p-5 hideonDesktop" id="couples">
+            <div class="text-center col-12 w-100 my-3">
+                <h2>RELATIONSHIP GUIDANCE:</h2>
+                <hr class="black">
+            </div>            
+            <div class="col-12">
+                <div class="text-justify">
+                    <p>
+                        I work with a variety of relationship constellations, including couples, parents and children, and siblings. In all these relationships, I introduce people to specific techniques for accessing and decluttering the deep connected space that exists between them. Practicing these techniques under my guidance rewires the brain, laying down new neural pathways.
+                        <br><br>
+                        This Encounter-Centered approach takes place in long sessions, either over two consecutive days, or is broken down into shorter blocks spread out over weeks. 
+                    </p>
+                    <div class="text-center pt-3">
+                        <h4>Want to book an appointment?</h4>
+                    </div>
+                </div>
+                <div class="text-center w-100 my-3">
+                    <a href="couplesguide.html" class="btn btn-grey p-4">WHAT TO EXPECT AND HOW TO BOOK</a>
+                </div>
+                <div>
+                    <hr class="grey">
+                </div>
             </div>
         </div>
 
         <!-- individual therapy -->
-        <div class="row p-5" id="individual">
+        <div class="row p-5 hideonDesktop" id="individual">
             <div class="text-center col-12 w-100 my-3">
                 <h2>INDIVIDUAL THERAPY:</h2>
                 <hr class="black">
@@ -85,31 +127,51 @@
             </div>
         </div>
 
-        <!-- couples therapy -->
-        <div class="row p-5" id="couples">
-            <div class="text-center col-12 w-100 my-3">
-                <h2>RELATIONSHIP GUIDANCE:</h2>
-                <hr class="black">
-            </div>            
-            <div class="col-12">
-                <div class="text-justify">
-                    <p>
-                        I work with a variety of relationship constellations, including couples, parents and children, and siblings. In all these relationships, I introduce people to specific techniques for accessing and decluttering the deep connected space that exists between them. Practicing these techniques under my guidance rewires the brain, laying down new neural pathways.
-                        <br><br>
-                        This Encounter-Centered approach takes place in long sessions, either over two consecutive days, or is broken down into shorter blocks spread out over weeks. 
-                    </p>
-                    <div class="text-center pt-3">
-                        <h4>Want to book an appointment?</h4>
+        <!-- desktop version of therapy -->
+        <div class="hideonAllMobile row p-5">
+            <div class="col-6 d-flex align-items-stretch">
+                <div class="pod rounded navy p-5 text-white">
+                    <div class="pod-inner">
+                        <h2>RELATIONSHIP GUIDANCE:</h2>
+                        <br>
+                        <p>
+                            I work with a variety of relationship constellations, including couples, parents and children, and siblings. In all these relationships, I introduce people to specific techniques for accessing and decluttering the deep connected space that exists between them. Practicing these techniques under my guidance rewires the brain, laying down new neural pathways.
+                            <br><br>
+                            This Encounter-Centered approach takes place in long sessions, either over two consecutive days, or is broken down into shorter blocks spread out over weeks. 
+                        </p>
+                    </div>
+                    <div class="pod-btn text-center">
+                        <div class="text-center pt-3">
+                            <p>Want to book an appointment?</p>
+                            <hr class="white">
+                        </div>
+                        <a href="couplesguide.html" class="btn btn-light">WHAT TO EXPECT AND HOW TO BOOK</a>
                     </div>
                 </div>
-                <div class="text-center w-100 my-3">
-                    <a href="couplesguide.html" class="btn btn-grey p-4">WHAT TO EXPECT AND HOW TO BOOK</a>
-                </div>
-                <div>
-                    <hr class="grey">
+            </div>
+
+            <div class="col-6 d-flex align-items-stretch">
+                <div class="pod rounded teal p-5 text-white">
+                    <div class="pod-inner">
+                        <h2>INDIVIDUAL THERAPY:</h2>
+                        <br>
+                        <p>
+                            I draw from a multitude of techniques and approaches. As a psychotherapist I may use insight oriented work, narrative therapy, mindfulness, and coaching. I am schooled in psychopharmacology, and if indicated I prescribe medications.
+                            <br><br>
+                            I offer individual psychiatric consultation and psychotherapy both in person in my office in Manhattan, or if appropriate, via video conferencing.
+                        </p>
+                    </div>
+                    <div class="pod-btn text-center">
+                        <div class="text-center pt-3">
+                            <p>Want to book an appointment?</p>
+                            <hr class="white">
+                        </div>
+                        <a href="#" class="btn btn-light">BOOK AN APPOINTMENT</a>
+                    </div>
                 </div>
             </div>
         </div>
+        
     </div>
 
 
@@ -154,7 +216,6 @@
             <a href="therapy.html"  class="active">therapy</a><br>
             <a href="storytelling.html">storytelling and speaking</a><br>
             <a href="news.html">blog and news</a><br>
-            <a href="events.html">events</a><br>
             <a href="contact.html">contact me</a><br>
         </div>
         <!-- line -->
@@ -224,17 +285,6 @@
     <script src="scripts/footer.js"></script>
     <!-- sign up -->
     <script src="scripts/signup.js"></script>
-    <!-- images -->
-    <script src="scripts/images.js"></script>
-    <script>
-        const therapyImage = document.querySelector('.therapyImage');
-        const therapyDesktop = "assets/images/PBrowde_intimateCouplesSession_Desktop.jpg";
-        const therapyMobile = "assets/images/PBrowde_intimateCouplesSession.jpg";
-        
-        imageResize(therapyImage, therapyDesktop, therapyMobile);
-        $(window).resize(() => {
-            imageResize(therapyImage, therapyDesktop, therapyMobile);
-        });
-    </script>
+    
 </body>
 </html>

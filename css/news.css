@@ -1,14 +1,14 @@
 
-    .newsImageHolder{
-        width: 100%;
-        height: 20vh;
-        overflow: hidden;
-    }
-    .newsImage{
-        height: 100%;
-    }
+.newsImageHolder{
+    width: 100%;
+    height: 20vh;
+    overflow: hidden;
+}
+.newsImage{
+    height: 100%;
+}
 
-    /* layered sections */
+/* layered sections */
 .layer{
     box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
 }

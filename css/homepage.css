@@ -29,10 +29,6 @@
     margin: auto;
 }
 
-.interludeImage{
-    align-items: flex-start;
-}
-
 
 
 /* layered sections */
@@ -42,27 +38,31 @@
 .layer1{
     height: 50vh;
     padding: 0;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
 }
 .layer-1-image{
-    height: 100%;
-    width: auto;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
 }
 .layer2{
-    transform: translate(47vw, 10vh);
-    position: absolute;
+  transform: translateY(-40vh);
 }
 .layer3{
-    padding: 2% 5% 2% 5%;
-    transform: translate(35vw, 30vh);
-    position: absolute;
+    transform: translateY(-30vh);
+    padding-right: 0!important;
+    height: 0;
+}
+.layerInner{
+    padding: 5% 2% 2% 2%;
 }
 .layer4{
-    height: 15vh;
+    height: 0vh;
     z-index:-100;
 }
-
-
 
 
 
@@ -103,24 +103,13 @@ No media query for `xs` since this is the default in Bootstrap */
         margin: 0;
     }
 
-    /* my offering */
-    .pod-inner{
-        height: 30vh;
-    }
-    .pod{
-        margin-bottom: 30px;
-    }
+    
+    
 }
 
 /* Medium devices or large landscape phones (tablets, 768px and up) */
 @media (min-width: 768px) and (orientation: landscape) { 
-    /* my offering */
-    .pod-inner{
-        height: 100vh;
-    }
-    .pod{
-        margin-bottom: 30px;
-    }
+   
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -137,18 +126,12 @@ No media query for `xs` since this is the default in Bootstrap */
         overflow: hidden;
     }
     
-     /* my offering */
-     .pod-inner{
-        height: 45vh;
-    }
  }
 
  /* Large devices landscape */
  @media (min-width: 992px) and (orientation: landscape) {
      /* my offering */
-     .pod-inner{
-        height: 80vh;
-    }
+
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -167,11 +150,6 @@ No media query for `xs` since this is the default in Bootstrap */
     .headerText{
         width: 50vw;
         margin: 0 25vw;
-    }
-
-    /* my offering */
-    .pod-inner{
-        height: 40vh;
     }
  }
 

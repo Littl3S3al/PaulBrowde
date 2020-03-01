@@ -24,25 +24,32 @@
 .layer1{
     height: 50vh;
     padding: 0;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
 }
 .layer-1-image{
+    flex-shrink: 0;
     min-width: 100%;
-    min-height: 100%;
+    min-height: 100%
 }
 .layer2{
-    transform: translate(47vw, 20vh);
-    position: absolute;
+  transform: translateY(-40vh);
 }
 .layer3{
-    padding: 2% 5% 2% 5%;
-    transform: translate(35vw, 40vh);
-    position: absolute;
+    transform: translateY(-30vh);
+    padding-right: 0!important;
+    height: 0;
+}
+.layerInner{
+    padding: 5% 2% 2% 2%;
+    height: 40vh;
 }
 .layer4{
     height: 15vh;
+    z-index:-100;
 }
-
 
 
 /* media queries */

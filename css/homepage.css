@@ -29,7 +29,9 @@
     margin: auto;
 }
 
-
+.interludeImage{
+    align-items: flex-start;
+}
 
 
 

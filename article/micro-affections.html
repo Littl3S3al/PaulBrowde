@@ -14,6 +14,7 @@
 
     <!-- Custom stylesheets -->
     <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="../css/news.css">
 
     <!--animate.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
@@ -22,12 +23,21 @@
 
         <!-- nav bar -->
         <div class="nav">
-            <div class="brand">
+            <div class="brand" data-loc="true">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.23 124"><defs><style>.logoBg{fill:#f27080;}.logo{fill:#fff;}</style></defs><title>PB_logo</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><rect class="logoBg" width="212.23" height="124" rx="62"/><path class="logo" d="M69.25,25a52.51,52.51,0,0,0,0,74,52.14,52.14,0,0,0,89-37,52.09,52.09,0,0,0-89-37Zm23.37-9a17.73,17.73,0,0,0,11.32,29v8.19L84.69,40.4,62.84,54.87h-4A48.07,48.07,0,0,1,92.62,16Zm13.5-2A13.35,13.35,0,1,1,92.83,27.37,13.33,13.33,0,0,1,106.12,14ZM70.75,54.87l13.94-9.24,13.94,9.24ZM58.34,62c0-.93,0-1.85.08-2.76h45.52V78.63L83,104A48,48,0,0,1,58.34,62ZM87,106l19.09-23L125.19,106A47.54,47.54,0,0,1,87,106Zm42.23-2L108.29,78.76V59.24h45.53c.05.91.08,1.83.08,2.76A48,48,0,0,1,129.2,104Zm24.17-49.13H108.29V45a17.74,17.74,0,0,0,11.33-29A48.06,48.06,0,0,1,153.37,54.87Z"/></g></g></svg>
             </div>
         </div>
-        <div class="bn">
+        <div class="bn hideOnTabletUp">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 124"><defs><style>.bnBg{fill:#676c76;}.bnLines{fill:#fff;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:6px;}</style></defs><title>PB_bn</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><circle class="bnBg" cx="62" cy="62" r="62"/><line class="bnLines" x1="15.5" y1="48.5" x2="108.5" y2="48.5"/><line class="bnLines" x1="15.5" y1="64.76" x2="108.5" y2="64.76"/><line class="bnLines" x1="15.5" y1="82.5" x2="108.5" y2="82.5"/></g></g></svg>
+        </div>
+
+        <div class="pagehead hideonMobile">
+            <div class="bnTablet">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 124"><defs><style>.bnBg{fill:#676c76;}.bnLines{fill:#fff;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:6px;}</style></defs><title>PB_bn</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><circle class="bnBg" cx="62" cy="62" r="62"/><line class="bnLines" x1="15.5" y1="48.5" x2="108.5" y2="48.5"/><line class="bnLines" x1="15.5" y1="64.76" x2="108.5" y2="64.76"/><line class="bnLines" x1="15.5" y1="82.5" x2="108.5" y2="82.5"/></g></g></svg>
+            </div>
+            <div class="pagename pink d-flex align-items-center text-white">
+                <h2>article</h2>
+            </div>
         </div>
     
         <!-- menu -->
@@ -38,61 +48,102 @@
                     <li><a href="../about.html">about me</a></li>
                     <li><a href="../therapy.html">therapy</a></li>
                     <li><a href="../storytelling.html">storytelling and speaking</a></li>
-                    <li><a href="../news.html">blog and news</a></li>
-                    <li><a href="../events.html">events</a></li>
+                    <li><a href="../news.html">news</a></li>
                     <li><a href="../contact.html">get in touch</a></li>
                 </ul>
             </div>
         </div>
 
-        <div class="text-white text-center pageHeader">
+        <div class="text-white text-center pageHeader hideOnTabletUp">
             <h2>NEWS</h2>
         </div>
 
     
     <!-- body section -->
     <div class="container-fluid">
-        <div class="row">
-            <div>
-                <img src="../assets/images/microAffections_full.jpg" alt="Paul Browde in a couples guidance session" class="w-100">
-            </div>
-            <div class="col-12 p-3">                
-                  <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-                      <li class="breadcrumb-item"><a href="../news.html">News</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Micro Affections</li>
-                    </ol>
-                  </nav>
+
+        <!-- image for all mobile -->
+        <div class="row hideonDesktop">
+            <div class="headerImage d-flex align-items-center justify-content-center">
+                <img src="../assets/images/microAffections.jpg" alt="Image of micro affections" class="articleImage" width="100%">
             </div>
         </div>
-        <div class="row p-3">
-            <div class="col-12 mt-1 text-center">
-                <h2>MICRO AFFECTIONS</h2>
-                <h3>C0-creating a relational culture of connection.</h3>
-                <hr class="black">
-            </div>
-            <div class="col-12 text-left">
-                <p>
-                    Couples seek therapy because things are not going so well. There are problems or difficulties for which they want help. Often, each has complaints about the other, with the idea that if the other could change, even a little, things would get better. 
-                    <br><br>
-                    Hedy Schleifer says that there are two states in which a relationship can occur. The first is a couple in a survival dance, the other is a couple in connection.
-                    The survival dance happens when a couple feels that the space between them is unsafe. This results in a polluting of the space and an increasing need for each member of the couple to turn away, to look for a path forward alone, in survival.
-                    <br><br>
-                    Many people are on their best behavior with strangers, polite, contained and civil.  This could mean that in the work place. Yet they reserve their complaining, whining, angry, exhausted selves for the ones at home. 
-                    How fair is this to the other, to oneself, and to the relationship. If what gets spoken is complaint and criticism, the relational space will quickly become polluted.
-                    <br><br>
-                    Consider then, what happens when a couple in a survival dance are asked by the therapist, “What is wrong, tell me about the problems.”
-                    This results in a deepening of the survival dance, a further entrenching of deeply held beliefs about the other’s behavior and further polluting the space between them.
-                    <br><br>
-                    While it is important to be able to discuss problems, I think it’s vital to first create an atmosphere of mutual respect and connection, out of which anything can be discussed.
-                    <br><br>
-                    Brain research shows that we are wired for connection. Our brains contain neurons, that mirror one another’s brains. Gazing into another’s eyes regulates both brains.
 
+
+        
+
+        <div class="row spacer hideonAllMobile"></div>
+        <div class="row px-5 pt-5">
+            <div class="col-xl-2"></div>
+            <!-- article content -->
+            <div class="col-12 col-xl-7">
+                <div class="mt-1 text-center">
+                    <h1>MICRO AFFECTIONS</h1>
+                    <h2>Co-creating a relational culture of connection.</h2>
+                    <hr class="black">
+                </div>
+                <div class="text-left copy">
+                    <img src="../assets/images/microAffections.jpg" alt="Image of micro affections" class="hideonAllMobile" width="100%">
+                    <br>
+                    <p>
+                        Couples seek therapy because things are not going so well. There are problems or difficulties for which they want help. Often, each has complaints about the other, with the idea that if the other could change, even a little, things would get better. 
+                        <br><br>
+                        Hedy Schleifer says that there are two states in which a relationship can occur. The first is a couple in a survival dance, the other is a couple in connection.
+                        The survival dance happens when a couple feels that the space between them is unsafe. This results in a polluting of the space and an increasing need for each member of the couple to turn away, to look for a path forward alone, in survival.
+                        <br><br>
+                        Many people are on their best behavior with strangers, polite, contained and civil.  This could mean that in the work place. Yet they reserve their complaining, whining, angry, exhausted selves for the ones at home. 
+                        How fair is this to the other, to oneself, and to the relationship. If what gets spoken is complaint and criticism, the relational space will quickly become polluted.
+                        <br><br>
+
+                        Consider then, what happens when a couple in a survival dance are asked by the therapist, “What is wrong, tell me about the problems.”
+                        This results in a deepening of the survival dance, a further entrenching of deeply held beliefs about the other’s behavior and further polluting the space between them.
+                        <br><br>
+                        While it is important to be able to discuss problems, I think it’s vital to first create an atmosphere of mutual respect and connection, out of which anything can be discussed.
+                        <br><br>
+                        Brain research shows that we are wired for connection. Our brains contain neurons, that mirror one another’s brains. Gazing into another’s eyes regulates both brains.
+                        <br><br>
+                        To create an environment of connection a couple should become cognizant of the culture they are co-creating. Is it a culture of criticism, complaint and contempt? Or is it a culture of compassion, curiosity and championing?
+                        <br><br>
+                        Through the day, there are many moments that co-create a relational culture.
+                        How couples say good morning, the tone of voice, bringing the other a cup of coffee, wishing one another a good day, moments of connection through the day for no reason, greeting one another warmly at the end of the day, asking how the day went and really listening to the answer,  sitting together on the couch, skin to skin, touching feet, expressing gratitude for the little things, speaking appreciations and pride are all micro affections which lead to a climate of connection.
+                        <br><br>
+                        The method of crossing the bridge, in which a couple sits, looking into one another’s eyes and breathing together, is a neurophysiological shortcut to the connected space. This kind of connection is what Martin Buber called the encounter of the souls. He said that the space between two people who are consciously connecting to one another is sacred.
+                        <br><br>
+                        Questions about micro-affections with your partner:
+                        <ul>
+                            <li>Do you greet your partner each morning with enthusiasm?</li>
+                            <li>Do you remember the gift that it is to be alive every morning?</li>
+                            <li>Do you say goodbye to one another on separating for the day?</li>
+                            <li>Do you thank your partner at least daily for something?</li>
+                            <li>Do you take a moment t0 re-connect each evening on coming back together after a day apart?</li>
+                            <li>Are you your partner’s champion, letting them know how proud you are of them?</li>
+                            <li>Do you have skin to skin contact on a daily basis?</li>
+                            <li>Do you know what makes your partner feel loved, and give it to them on a regular basis? </li>
+                            <li>Do you share dreams with one another about possible futures, without worrying about the practicality of such dreams?</li>
+                            <li>Do you acknowledge your relationship as a journey, and express gratitude for somebody being willing to take the journey with you?</li>
+                        </ul>
+
+                    </p>
+                </div>
+            </div>
+            <div class="col-xl-1"></div>
+
+            <div class="col-xl-2 articlesTab hideonAllMobile2 rounded grey p-4 text-white">
+                <h3>OTHER ARTICLES</h3>
+                <hr class="white">
+                <br>
+                <p>
+                    <a class="text-white" href="../article/power-of-nature.html"><u>The Power of Nature</u></a>
+                   <br>
+                   <br>
+                   <a class="text-white" href="../article/holotropic-breath.html"><u>Holotropic Breath</u></a>
+                   <br>
+                   <br>
+                   <a class="text-white" href="../article/why-stories.html"><u>Why Stories?</u></a>
                 </p>
             </div>
         </div>
-        <div class="col-12 text-center my-3">
+        <div class="col-12 text-center my-3 p-5">
             <a href="../news.html" class="btn btn-grey">BACK</a>
         </div>
 
@@ -214,5 +265,18 @@
     <script src="../scripts/footer.js"></script>
     <!-- sign up -->
     <script src="../scripts/signup.js"></script>
+    <!-- images -->
+    <script src="../scripts/images.js"></script>
+    <script>
+        const articleImage = document.querySelector('.articleImage');
+        const articleDesktop = "../assets/images/thePowerofNature_Desktop.jpg";
+        const articleMobile = "../assets/images/thePowerofNature_full.jpg";
+
+        imageResize(articleImage, articleDesktop, articleMobile);
+
+        $(window).resize(() => {
+            imageResize(articleImage, articleDesktop, articleMobile);
+        });
+    </script>
 </body>
 </html>

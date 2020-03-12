@@ -14,6 +14,7 @@
 
     <!-- Custom stylesheets -->
     <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="../css/news.css">
 
     <!--animate.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
@@ -22,12 +23,21 @@
 
         <!-- nav bar -->
         <div class="nav">
-            <div class="brand">
+            <div class="brand" data-loc="true">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.23 124"><defs><style>.logoBg{fill:#f27080;}.logo{fill:#fff;}</style></defs><title>PB_logo</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><rect class="logoBg" width="212.23" height="124" rx="62"/><path class="logo" d="M69.25,25a52.51,52.51,0,0,0,0,74,52.14,52.14,0,0,0,89-37,52.09,52.09,0,0,0-89-37Zm23.37-9a17.73,17.73,0,0,0,11.32,29v8.19L84.69,40.4,62.84,54.87h-4A48.07,48.07,0,0,1,92.62,16Zm13.5-2A13.35,13.35,0,1,1,92.83,27.37,13.33,13.33,0,0,1,106.12,14ZM70.75,54.87l13.94-9.24,13.94,9.24ZM58.34,62c0-.93,0-1.85.08-2.76h45.52V78.63L83,104A48,48,0,0,1,58.34,62ZM87,106l19.09-23L125.19,106A47.54,47.54,0,0,1,87,106Zm42.23-2L108.29,78.76V59.24h45.53c.05.91.08,1.83.08,2.76A48,48,0,0,1,129.2,104Zm24.17-49.13H108.29V45a17.74,17.74,0,0,0,11.33-29A48.06,48.06,0,0,1,153.37,54.87Z"/></g></g></svg>
             </div>
         </div>
-        <div class="bn">
+        <div class="bn hideOnTabletUp">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 124"><defs><style>.bnBg{fill:#676c76;}.bnLines{fill:#fff;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:6px;}</style></defs><title>PB_bn</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><circle class="bnBg" cx="62" cy="62" r="62"/><line class="bnLines" x1="15.5" y1="48.5" x2="108.5" y2="48.5"/><line class="bnLines" x1="15.5" y1="64.76" x2="108.5" y2="64.76"/><line class="bnLines" x1="15.5" y1="82.5" x2="108.5" y2="82.5"/></g></g></svg>
+        </div>
+
+        <div class="pagehead hideonMobile">
+            <div class="bnTablet">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 124"><defs><style>.bnBg{fill:#676c76;}.bnLines{fill:#fff;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:6px;}</style></defs><title>PB_bn</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><circle class="bnBg" cx="62" cy="62" r="62"/><line class="bnLines" x1="15.5" y1="48.5" x2="108.5" y2="48.5"/><line class="bnLines" x1="15.5" y1="64.76" x2="108.5" y2="64.76"/><line class="bnLines" x1="15.5" y1="82.5" x2="108.5" y2="82.5"/></g></g></svg>
+            </div>
+            <div class="pagename pink d-flex align-items-center text-white">
+                <h2>article</h2>
+            </div>
         </div>
     
         <!-- menu -->
@@ -38,92 +48,80 @@
                     <li><a href="../about.html">about me</a></li>
                     <li><a href="../therapy.html">therapy</a></li>
                     <li><a href="../storytelling.html">storytelling and speaking</a></li>
-                    <li><a href="../news.html">blog and news</a></li>
-                    <li><a href="../events.html">events</a></li>
+                    <li><a href="../news.html">news</a></li>
                     <li><a href="../contact.html">get in touch</a></li>
                 </ul>
             </div>
         </div>
 
-        <div class="text-white text-center pageHeader">
+        <div class="text-white text-center pageHeader hideOnTabletUp">
             <h2>NEWS</h2>
         </div>
 
     
     <!-- body section -->
     <div class="container-fluid">
-        <div class="row">
-            <div>
-                <img src="../assets/images/whyStories_full.jpg" alt="Paul Browde in a couples guidance session" class="w-100">
-            </div>
-            <div class="col-12 p-3">                
-                  <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-                      <li class="breadcrumb-item"><a href="../news.html">News</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Why stories</li>
-                    </ol>
-                  </nav>
+
+        <!-- image for all mobile -->
+        <div class="row hideonDesktop">
+            <div class="headerImage d-flex align-items-center justify-content-center">
+                <img src="../assets/images/whyStories.jpg" alt="Why tell stories image" class="articleImage" width="100%">
             </div>
         </div>
-        <div class="row p-3">
-            <div class="col-12 mt-1 text-center">
-                <h2>WHY STORIES</h2>
-                <hr class="black">
+
+
+        
+
+        <div class="row spacer hideonAllMobile"></div>
+        <div class="row px-5 pt-5">
+            <div class="col-xl-2"></div>
+            <!-- article content -->
+            <div class="col-12 col-xl-7">
+                <div class="mt-1 text-center">
+                    <h1>WHY TELL STORIES?</h1>
+                    <hr class="black">
+                </div>
+                <div class="text-left copy">
+                    <img src="../assets/images/whyStories.jpg" alt="Why tell stories image" class="hideonAllMobile" width="100%">
+                    <br>
+                    <p>
+                        <ol>
+                            <li class="pb-4">Stories allow you to be known.  There are things about your life that have happened to you, and only to you. By telling these stories others come to know you and to understand your unique experience. </li>
+                            <li class="pb-4">Stories are a way of making sense of life. Life happens as pure experience. Events happen to us. It is through the “storying” of life, that we begin to make sense of our experience and start to make meaning of our lives. Stories are a way of distinguishing what happened from our interpretation of what happened. We cannot help interpreting things as they happen. We often live under the spell of the interpretations rather than remembering that what happened is not necessarily how we have interpreted it. </li>
+                            <li class="pb-4">Telling stories creates intimacy and connection. When a story is told to another person who listens to those stories, that is a way of creating human connection and intimacy. Stories are a way of linking to another, creating shared realities with somebody else. Telling and listening to stories, with a non-judgmental listening are an access to the space between people, the relationship space, as Martin Buber calls it, “the encounter”.</li>
+                            <li class="pb-4">Stories are a way of communicating ideas that are important to you in a clear and impactful way. If you speak your opinion about something, people are sure to have their opinions. If you tell a story that communicates the same thing, nobody can argue. </li>
+                            <li class="pb-4">Stories are a way of communicating who you are and what you do in life. They can be a useful tool for effectively speaking the value that you bring to life, and why others should appreciate that value.</li>
+                            <li class="pb-4">Stories are an access to creativity. It has been said that memory is a creative act. So telling stories, is an opportunity to be creative with what has happened to you, finding a sequence for telling the events of your life, choosing what you wish to include and what you wish to leave out. The story you tell allows you to define yourself in a way you choose. </li>
+                            <li class="pb-4">Stories are a way of re-membering those who have died. By telling stories about people we have lost, we bring them back into the membered club that is our lives. (Barbara Myerhoff). We feel connection and contact with those we have loved and lost.</li>
+                            <li class="pb-4">Stories can help with problem solving. Telling the story of a problem allows one to see some options for dealing with that problem</li>
+                            <li class="pb-4">Stories build self –esteem. Telling stories about a skill or strength, can make that skill or strength more visible, or accessible to you. It is a way of building self-esteem.</li>
+                            <li class="pb-4">Stories are a legacy to leave behind when we die.</li>
+                            <li class="pb-4">Stories are entertaining and fun.</li>
+                            <li class="pb-4">Stories are educational. People are engaged by stories and learn more from listening to a story than from listening to a string of facts.</li>
+                            <li class="pb-4">Stories lead to diversity and learning. People who hear stories of other people and other ways of living are transported to that other way. Listeners have understanding and insight into new and other ways of living,  much like they would have had they traveled to a new place.</li>
+                            <li>Stories allow others to see themselves reflected. Think of the power of the theatre.</li>
+                        </ol>
+                    </p>
+                </div>
             </div>
-            <div class="col-12 text-left">
+            <div class="col-xl-1"></div>
+
+            <div class="col-xl-2 articlesTab hideonAllMobile2 rounded grey p-4 text-white">
+                <h3>OTHER ARTICLES</h3>
+                <hr class="white">
+                <br>
                 <p>
-                    Why tell stories about your life?
+                    <a class="text-white" href="../article/power-of-nature.html"><u>The Power of Nature</u></a>
+                   <br>
+                   <br>
+                   <a class="text-white" href="../article/holotropic-breath.html"><u>Holotropic Breath</u></a>
+                   <br>
+                   <br>
+                   <a class="text-white" href="../article/micro-affections.html"><u>Micro Afections</u></a>
                 </p>
-                <ol>
-                    <li class="mt-3">
-                        Stories allow you to be known.  There are things about your life that have happened to you, and only to you. By telling these stories others come to know you and to understand your unique experience. 
-                    </li>
-                    <li class="mt-3">
-                        Stories are a way of making sense of life. Life happens as pure experience. Events happen to us. It is through the “storying” of life, that we begin to make sense of our experience and start to make meaning of our lives. Stories are a way of distinguishing what happened from our interpretation of what happened. We cannot help interpreting things as they happen. We often live under the spell of the interpretations rather than remembering that what happened is not necessarily how we have interpreted it. 
-                    </li>
-                    <li class="mt-3">
-                        Telling stories creates intimacy and connection. When a story is told to another person who listens to those stories, that is a way of creating human connection and intimacy. Stories are a way of linking to another, creating shared realities with somebody else. Telling and listening to stories, with a non-judgmental listening are an access to the space between people, the relationship space, as Martin Buber calls it, “the encounter”.
-                    </li>
-                    <li class="mt-3">
-                        Stories are a way of communicating ideas that are important to you in a clear and impactful way. If you speak your opinion about something, people are sure to have their opinions. If you tell a story that communicates the same thing, nobody can argue. 
-                    </li>
-                    <li class="mt-3">
-                        Stories are a way of communicating who you are and what you do in life. They can be a useful tool for effectively speaking the value that you bring to life, and why others should appreciate that value.
-                    </li>
-                    <li class="mt-3">
-                        Stories are an access to creativity. It has been said that memory is a creative act. So telling stories, is an opportunity to be creative with what has happened to you, finding a sequence for telling the events of your life, choosing what you wish to include and what you wish to leave out. The story you tell allows you to define yourself in a way you choose. 
-                    </li>
-                    <li class="mt-3">
-                        Stories are a way of re-membering those who have died. By telling stories about people we have lost, we bring them back into the membered club that is our lives. (Barbara Myerhoff). We feel connection and contact with those we have loved and lost.
-                    </li>
-                    <li class="mt-3">
-                        Stories can help with problem solving. Telling the story of a problem allows one to see some options for dealing with that problem
-                    </li>
-                    <li class="mt-3">
-                        Stories build self –esteem.
-                        <br>
-                        Telling stories about a skill or strength, can make that skill or strength more visible, or accessible to you. It is a way of building self-esteem.  
-                    </li>
-                    <li class="mt-3">
-                        Stories are a legacy to leave behind when we die.
-                    </li>
-                    <li class="mt-3">
-                        Stories are entertaining and fun.
-                    </li>
-                    <li class="mt-3">
-                        Stories are educational. People are engaged by stories and learn more from listening to a story than from listening to a string of facts.
-                    </li>
-                    <li class="mt-3">
-                        Stories lead to diversity and learning. People who hear stories of other people and other ways of living are transported to that other way. Listeners have understanding and insight into new and other ways of living,  much like they would have had they traveled to a new place.
-                    </li>
-                    <li class="mt-3">
-                        Stories allow others to see themselves reflected. Think of the power of the theatre.
-                    </li>
-                </ol>
             </div>
         </div>
-        <div class="col-12 text-center my-3">
+        <div class="col-12 text-center my-3 p-5">
             <a href="../news.html" class="btn btn-grey">BACK</a>
         </div>
 
@@ -245,5 +243,18 @@
     <script src="../scripts/footer.js"></script>
     <!-- sign up -->
     <script src="../scripts/signup.js"></script>
+    <!-- images -->
+    <script src="../scripts/images.js"></script>
+    <script>
+        const articleImage = document.querySelector('.articleImage');
+        const articleDesktop = "../assets/images/thePowerofNature_Desktop.jpg";
+        const articleMobile = "../assets/images/thePowerofNature_full.jpg";
+
+        imageResize(articleImage, articleDesktop, articleMobile);
+
+        $(window).resize(() => {
+            imageResize(articleImage, articleDesktop, articleMobile);
+        });
+    </script>
 </body>
 </html>

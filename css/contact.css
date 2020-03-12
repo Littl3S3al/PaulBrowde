@@ -6,12 +6,51 @@
     transform: translateY(2.5vw);
     font-size: 0.9em;
 }
-.rounded{
-    border-radius: 20px!important;
-}
+
 .map{
     overflow: hidden;
     padding: 0;
     width: 100%;
     height: 70vh;
+}
+
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .contactIcon{
+        width: 8vw;
+    }
+}
+
+/* Small devices on landscape view*/
+@media (min-width: 576px) and (orientation: landscape) { 
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .contactIcon{
+        width: 8vw;
+    }
+    .line2{
+        transform: translateY(1.5vw);
+    }
+    .map{
+        height: 40vh;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {   
+}
+
+/* Medium devices landscape (tablets, 768px and up) */
+@media (min-width: 1024px) and (orientation : landscape){ 
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .contactIcon{
+        width: 4vw;
+    }
 }

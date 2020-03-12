@@ -8,27 +8,27 @@
     height: 100%;
 }
 
-/* layered sections */
-.layer{
-    box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+
+/* article quote */
+.quote{
+    width: 3vw;
+    margin: 0 1vw;
 }
-.layer1{
-    height: 40vh;
-    padding: 0;
-    overflow: hidden;
-    margin-top: 10vh;
+.inverted{
+    transform: rotateX(180deg);
+    transform: rotateZ(180deg);
+    float: right;
+    position: relative;
 }
-.layer-1-image{
-    width: 100%;
-    min-height: 100%;
+
+.articlesTab{
+    position: sticky;
+    top: 20vh;
+    right: 0;
+    height: 70vh;
 }
-.layer3{
-    padding: 2% 5% 2% 5%;
-    transform: translate(35vw, 40vh);
-    position: absolute;
-}
-.layer4{
-    height: 15vh;
+h1{
+    font-size: 2em;
 }
 
 
@@ -63,5 +63,7 @@ No media query for `xs` since this is the default in Bootstrap */
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-
+    h1{
+        font-size: 3em;
+    }
 }

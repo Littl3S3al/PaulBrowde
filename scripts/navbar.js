@@ -1,7 +1,12 @@
-const brand = document.querySelector('.logoBg');
+const brand = document.querySelector('.brand');
 
 brand.addEventListener('click', () => {
-    document.location.href = 'index.html';
+       if(brand.dataset.loc){
+           window.location.assign("../index.html")
+       }
+       else {
+        window.location.assign("index.html")
+       }
 })
 
 const menuBtn = document.querySelector('.bn');

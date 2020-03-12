@@ -14,6 +14,7 @@
 
     <!-- Custom stylesheets -->
     <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="../css/news.css">
 
     <!--animate.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
@@ -22,12 +23,21 @@
 
         <!-- nav bar -->
         <div class="nav">
-            <div class="brand">
+            <div class="brand" data-loc="true">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.23 124"><defs><style>.logoBg{fill:#f27080;}.logo{fill:#fff;}</style></defs><title>PB_logo</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><rect class="logoBg" width="212.23" height="124" rx="62"/><path class="logo" d="M69.25,25a52.51,52.51,0,0,0,0,74,52.14,52.14,0,0,0,89-37,52.09,52.09,0,0,0-89-37Zm23.37-9a17.73,17.73,0,0,0,11.32,29v8.19L84.69,40.4,62.84,54.87h-4A48.07,48.07,0,0,1,92.62,16Zm13.5-2A13.35,13.35,0,1,1,92.83,27.37,13.33,13.33,0,0,1,106.12,14ZM70.75,54.87l13.94-9.24,13.94,9.24ZM58.34,62c0-.93,0-1.85.08-2.76h45.52V78.63L83,104A48,48,0,0,1,58.34,62ZM87,106l19.09-23L125.19,106A47.54,47.54,0,0,1,87,106Zm42.23-2L108.29,78.76V59.24h45.53c.05.91.08,1.83.08,2.76A48,48,0,0,1,129.2,104Zm24.17-49.13H108.29V45a17.74,17.74,0,0,0,11.33-29A48.06,48.06,0,0,1,153.37,54.87Z"/></g></g></svg>
             </div>
         </div>
-        <div class="bn">
+        <div class="bn hideOnTabletUp">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 124"><defs><style>.bnBg{fill:#676c76;}.bnLines{fill:#fff;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:6px;}</style></defs><title>PB_bn</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><circle class="bnBg" cx="62" cy="62" r="62"/><line class="bnLines" x1="15.5" y1="48.5" x2="108.5" y2="48.5"/><line class="bnLines" x1="15.5" y1="64.76" x2="108.5" y2="64.76"/><line class="bnLines" x1="15.5" y1="82.5" x2="108.5" y2="82.5"/></g></g></svg>
+        </div>
+
+        <div class="pagehead hideonMobile">
+            <div class="bnTablet">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 124"><defs><style>.bnBg{fill:#676c76;}.bnLines{fill:#fff;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:6px;}</style></defs><title>PB_bn</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><circle class="bnBg" cx="62" cy="62" r="62"/><line class="bnLines" x1="15.5" y1="48.5" x2="108.5" y2="48.5"/><line class="bnLines" x1="15.5" y1="64.76" x2="108.5" y2="64.76"/><line class="bnLines" x1="15.5" y1="82.5" x2="108.5" y2="82.5"/></g></g></svg>
+            </div>
+            <div class="pagename pink d-flex align-items-center text-white">
+                <h2>article</h2>
+            </div>
         </div>
     
         <!-- menu -->
@@ -38,59 +48,96 @@
                     <li><a href="../about.html">about me</a></li>
                     <li><a href="../therapy.html">therapy</a></li>
                     <li><a href="../storytelling.html">storytelling and speaking</a></li>
-                    <li><a href="../news.html">blog and news</a></li>
-                    <li><a href="../events.html">events</a></li>
+                    <li><a href="../news.html">news</a></li>
                     <li><a href="../contact.html">get in touch</a></li>
                 </ul>
             </div>
         </div>
 
-        <div class="text-white text-center pageHeader">
+        <div class="text-white text-center pageHeader hideOnTabletUp">
             <h2>NEWS</h2>
         </div>
 
     
     <!-- body section -->
     <div class="container-fluid">
-        <div class="row">
-            <div>
-                <img src="../assets/images/thePowerofNature_full.jpg" alt="Paul Browde in a couples guidance session" class="w-100">
-            </div>
-            <div class="col-12 p-3">                
-                  <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-                      <li class="breadcrumb-item"><a href="../news.html">News</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Holotropic breath</li>
-                    </ol>
-                  </nav>
+
+         <!-- image for all mobile -->
+         <div class="row hideonDesktop">
+            <div class="headerImage d-flex align-items-center justify-content-center">
+                <img src="../assets/images/holotropicBreath_full.jpg" alt="Holotropic Breath Mandala" class="articleImage" width="100%">
             </div>
         </div>
-        <div class="row p-3">
-            <div class="col-12 mt-1 text-center">
-                <h2>HOLOTROPIC BREATH</h2>
-                <hr class="black">
+
+
+        
+
+        <div class="row spacer hideonAllMobile"></div>
+        <div class="row px-5 pt-5">
+            <div class="col-xl-2"></div>
+            <!-- article content -->
+            <div class="col-12 col-xl-7">
+                <div class="mt-1 text-center">
+                    <h1>HOLOTROPIC BREATH</h1>
+                    <hr class="black">
+                </div>
+                <div class="text-left copy">
+                    <img src="../assets/images/holotropicBreath.jpg" alt="Paul Browde in a couples guidance session" class="hideonAllMobile" width="100%">
+                    <br>
+                    <p>
+                        There is an explosion of people interested in working with psychedelics as therapeutic medications.
+                        <br><br>
+                        There is much research underway, showing promise for the use of MDMA for Post Traumatic Stress disorder, and Psilocybin for Cancer related anxiety.
+                        <br><br>
+                        Ayelet Waldman’s book calld “A good day” reflects an interest in the practice of microdosing for the treatment of depression.
+                        <br><br>
+                        Stanislav Grof, is a psychiatrist, who has researched “non ordinary states of consciousness” for many years. 
+                        <br><br>
+                        He began with LSD research but once illegal, developed a form of breathwork called Holotropic breathing. During a breathwork session, a person lies down, with eyes covered, listening to music and allowing the ego mind to gently let go. As the music plays and the breath deepens, people enter non ordinary states of consciousness, which result in teachings and experiences that could not be produced by the conscious mind. Assistants walk around the room, assisting in deepending the process, 
+                        <br><br>
+                        Stan Grof has written extensively on the effect of birth trauma on our lives, and during these breathwork sessions some people feel connected to their own births.
+                        <br><br>
+                        I did a week of breathwork with Grof’s organization. After my experience, I was led to a room filled with art supplies and was asked to create a mandala.
+                        <br><br>
+                        Above is the mandala I painted, and below are the words I wrote about it for Stan Grof’s book:
+                        <br><br>
+                        <hr class="black">
+                        <br><br>
+                        This mandala arose out of a breathwork session in which I experienced my birth. It was an uncomfortable process. I moved from feeling calm and comfortable to feeling confined and trapped. I suddenly hated the music, the breathing and being there altogether. 
+                        <br><br>
+                        In the present moment I wanted to leave the room yet knew that this was also a memory of an old experience. When assistants offered physical resistance to intensify the resistance of being born, I began to push them away, yet when they let go I surprisingly found myself pulling them back. I recognized through this action, a long-standing emotional pattern, which could be spoken as “get away from me; please don’t leave me”. When I stopped fighting, I lay there, passively, waiting for someone to do something to get me out of my predicament. I shouted over and over “somebody do something.” 
+                        <br><br>
+                        This session was in keeping with my actual birth, in which I lay in an occipital posterior position, so that delivery did not proceed as it is supposed to. My mother was given Pitocin, which resulted in a tonic uterine contraction, which lasted close to thirty minutes. I have always known that this was one of the most excruciating experiences of my mother’s life, but only during this breathwork session did I recognize the pain it must have caused me. Ultimately, a forceps was required to pull me out.
+                        <br><br>
+                        I realized during this session that there are many current emotional patterns that correspond to this birth process. The feeling of waiting to be rescued, because there is nothing more I can do, is a state of being, a very young part of me with which I resonate to this day. Perhaps I am repeating the birth experience again and again as I move from one stage of life to another.
+                        It then dawned on me that we are all in a process of birth, as we move from one state to another. Birth is a birth, aging is a birth, and death itself is a birth. On seeing this I felt greatly connected to all other people. 
+                        <br><br>
+                        I experienced myself as part of a collective, going through our birth experiences alone, yet connected through our common experience of being human. This showed up in the mandala as connection to mother earth through our umbilical cords.
+                        I also saw that the earth itself, and indeed the universe is in a constant state of birth or evolution, moving from one state to another. This shows up in my mandala as the universe depicted as a giant womb floating on a matrix of consciousness.
+                        <br><br>
+                        The yellow spiral represents a passageway from this realm of consciousness to other realms as yet undiscovered. I am passionate about exploring these other realms and finding the passages to reach them.
+
+                    </p>
+                </div>
             </div>
-            <div class="col-12 text-left">
+            <div class="col-xl-1"></div>
+
+            <div class="col-xl-2 articlesTab hideonAllMobile2 rounded grey p-4 text-white">
+                <h3>OTHER ARTICLES</h3>
+                <hr class="white">
+                <br>
                 <p>
-                    There is an explosion of people interested in working with psychedelics as therapeutic medications.
-                    <br><br>
-                    There is much research underway, showing promise for the use of MDMA for Post Traumatic Stress disorder, and Psilocybin for Cancer related anxiety.
-                    Ayelet Waldman’s book calld “A good day” reflects an interest in the practice of microdosing for the treatment of depression.
-                    <br><br>
-                    Stanislav Grof, is a psychiatrist, who has researched “non ordinary states of consciousness” for many years. 
-                    <br><br>
-                    He began with LSD research but once illegal, developed a form of breathwork called Holotropic breathing. During a breathwork session, a person lies down, with eyes covered, listening to music and allowing the ego mind to gently let go. As the music plays and the breath deepens, people enter non ordinary states of consciousness, which result in teachings and experiences that could not be produced by the conscious mind. Assistants walk around the room, assisting in deepending the process, 
-                    <br><br>
-                    Stan Grof has written extensively on the effect of birth trauma on our lives, and during these breathwork sessions some people feel connected to their own births.
-                    <br><br>
-                    I did a week of breathwork with Grof’s organization. After my experience, I was led to a room filled with art supplies and was asked to create a mandala.
-                    <br><br>
-                    Here is the mandala I painted, and the words I wrote about it for Stan Grof’s book.
+                   <a class="text-white" href="../article/power-of-nature.html"><u>The power of nature</u></a>
+                   <br>
+                   <br>
+                   <a class="text-white" href="../article/micro-affections.html"><u>Micro Afections</u></a>
+                   <br>
+                   <br>
+                   <a class="text-white" href="../article/why-stories.html"><u>Why stories?</u></a>
                 </p>
             </div>
         </div>
-        <div class="col-12 text-center my-3">
+        <div class="col-12 text-center my-3 p-5">
             <a href="../news.html" class="btn btn-grey">BACK</a>
         </div>
 
@@ -212,5 +259,18 @@
     <script src="../scripts/footer.js"></script>
     <!-- sign up -->
     <script src="../scripts/signup.js"></script>
+    <!-- images -->
+    <script src="../scripts/images.js"></script>
+    <script>
+        const articleImage = document.querySelector('.articleImage');
+        const articleDesktop = "../assets/images/thePowerofNature_Desktop.jpg";
+        const articleMobile = "../assets/images/thePowerofNature_full.jpg";
+
+        imageResize(articleImage, articleDesktop, articleMobile);
+
+        $(window).resize(() => {
+            imageResize(articleImage, articleDesktop, articleMobile);
+        });
+    </script>
 </body>
 </html>

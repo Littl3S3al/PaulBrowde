@@ -37,13 +37,19 @@ const closeMenu = (btn) => {
 
 
 // if click anywhere else on screen
+document.addEventListener('click', e => {
+    e.stopPropagation;
+    if(menuOpen){
+        closeMenu(menuBtn);
+    }
+})
 
 menuBtn.addEventListener('click', () => {
     if(!menuOpen){
         openMenu(menuBtn);
     } else {
         closeMenu(menuBtn);
-    }
+    };
 });
 
 menuBtnTablet.addEventListener('click', () => {

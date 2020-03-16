@@ -119,10 +119,7 @@ No media query for `xs` since this is the default in Bootstrap */
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-    /* video */
-    video.hero{
-        min-height:80vh;
-    }
+
 
     /* header section */
     .header{
@@ -141,11 +138,7 @@ No media query for `xs` since this is the default in Bootstrap */
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-    /* video */
-    video.hero{
-        min-width: 100vw;
-        min-height: 100vh;
-    }
+
     /* header section */
     .header{
         width: 100vw;

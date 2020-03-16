@@ -1,26 +1,16 @@
-/* Extra small devices (portrait phones, less than 576px)
-No media query for `xs` since this is the default in Bootstrap */
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
+.heroBox{
+    height: 80vh;
+    overflow: hidden;
+}
+video{
+    object-fit: cover!important;
+    width: 100vw;
 }
 
-/* Small devices on landscape view*/
-@media (min-width: 576px) and (orientation: landscape) { 
-}
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-    
-}
-
-/* Medium devices landscape (tablets, 768px and up) */
-@media (min-width: 1024px) and (orientation : landscape){ 
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
+.headerText{
+    width: 90vw;
+    margin: 0 5vw;
+    position: absolute;
+    color: white;
+    top: 10vh;
 }

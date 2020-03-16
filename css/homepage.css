@@ -24,6 +24,10 @@ video{
 }
 
 /* about section */
+.interludeImage{
+    overflow: hidden;
+    height: 30vh;
+}
 .test{
     width: 100vw;
     height: auto;

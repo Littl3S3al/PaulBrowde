@@ -1,4 +1,8 @@
 /* header section */
+video{
+    object-fit: cover;
+    min-width: 100vw;
+}
 .header{
     height: 100vh;
     width: 100vw;
@@ -120,7 +124,6 @@ No media query for `xs` since this is the default in Bootstrap */
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
 
-
     /* header section */
     .header{
         height: 80vh;
@@ -138,6 +141,8 @@ No media query for `xs` since this is the default in Bootstrap */
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+
+
 
     /* header section */
     .header{

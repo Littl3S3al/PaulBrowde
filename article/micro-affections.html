@@ -41,9 +41,10 @@
         </div>
     
         <!-- menu -->
+        <div class="menuContainer hideonAllMobile"></div>
         <div class="menuWrapper">
             <div class="menuItems">
-                <ul class="menuList">
+                <ul class="menuList" data-loc="true">
                     <li><a href="../index.html">home</a></li>
                     <li><a href="../about.html">about me</a></li>
                     <li><a href="../therapy.html">therapy</a></li>
@@ -265,18 +266,6 @@
     <script src="../scripts/footer.js"></script>
     <!-- sign up -->
     <script src="../scripts/signup.js"></script>
-    <!-- images -->
-    <script src="../scripts/images.js"></script>
-    <script>
-        const articleImage = document.querySelector('.articleImage');
-        const articleDesktop = "../assets/images/thePowerofNature_Desktop.jpg";
-        const articleMobile = "../assets/images/thePowerofNature_full.jpg";
-
-        imageResize(articleImage, articleDesktop, articleMobile);
-
-        $(window).resize(() => {
-            imageResize(articleImage, articleDesktop, articleMobile);
-        });
-    </script>
+    
 </body>
 </html>

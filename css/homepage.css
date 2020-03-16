@@ -23,11 +23,6 @@ video{
     animation: underline 1s linear 2s forwards;
 }
 
-/* about section */
-.interludeImage{
-    overflow: hidden;
-    height: 30vh;
-}
 
 /* My philosophy section */
 .headshot{

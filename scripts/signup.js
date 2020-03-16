@@ -13,7 +13,18 @@ signupBtn.addEventListener('click', () => {
             popupWrapper.classList.add('d-none');
         }, 2000);
     };
-})
+});
+
+// stop event bubbling
+popup.addEventListener('click', e => {
+    e.stopPropagation();
+});
+
+// close popup when click on wrapper only
+popupWrapper.addEventListener('click', e => {
+    e.stopPropagation();
+    popupWrapper.classList.add('d-none');
+});
 
 // close popup when clicking on the cancel option
 cancel.addEventListener('click', () => {

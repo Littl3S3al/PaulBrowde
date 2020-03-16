@@ -596,7 +596,7 @@ No media query for `xs` since this is the default in Bootstrap */
     }
     /* sign up pop up */
     .popup{
-        margin: 20vh 15vmin;
+        margin: 20vh 35vmin;
         padding: 10vh 25vmin;
         height:50vh;
     }

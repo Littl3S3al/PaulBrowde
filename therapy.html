@@ -127,7 +127,7 @@
                     </div>
                 </div>
                 <div class="text-center w-100 my-3">
-                    <a href="#" class="btn btn-grey p-4">BOOK AN APPOINTMENT</a>
+                    <a href="javascript: void(0)" class="btn btn-grey p-4 appointmentBtn">BOOK AN APPOINTMENT</a>
                 </div>
                 <div>
                     <hr class="grey">
@@ -174,7 +174,7 @@
                             <p>Want to book an appointment?</p>
                             <hr class="white">
                         </div>
-                        <a href="#" class="btn btn-light">BOOK AN APPOINTMENT</a>
+                        <a href="javascript: void(0)" class="btn btn-light appointmentBtn">BOOK AN APPOINTMENT</a>
                     </div>
                 </div>
             </div>
@@ -246,11 +246,26 @@
                 In my monthly newsletter, I share my inspirations, insights and information on where to find me next.
             </p>
             <form>
-                <input type="text" name="name" value="Your name" required>
-                <input type="text" name="email" value="Your email address" required>
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="text" name="email" placeholder="Your email address" required>
                 <input type="submit" value="SUBMIT" class="btn btn-lavenderGrey">
             </form>
             <a class="black signupCancel" href="javascript: void(0)">no thanks, not today</a>
+        </div>
+    </div>
+
+    <!-- book appointment popup -->
+    <div class="appointmentWrapper popupWrapper d-none">
+        <div class="appointmentPopup popup navy text-center">
+            <p class="text-white">
+                Please give us your contact details and we will get back to you to set up and appointment.
+            </p>
+            <form>
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="text" name="email" placeholder="Your email address" required>
+                <input type="submit" value="SUBMIT" class="btn btn-lavenderGrey">
+            </form>
+            <a class="text-white appointmentCancel" href="javascript: void(0)">no thanks, not today</a>
         </div>
     </div>
 
@@ -293,6 +308,8 @@
     <script src="scripts/footer.js"></script>
     <!-- sign up -->
     <script src="scripts/signup.js"></script>
+    <!-- appointment -->
+    <script src="scripts/appointment.js"></script>
     
 </body>
 </html>

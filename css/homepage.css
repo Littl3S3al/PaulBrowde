@@ -24,7 +24,8 @@ video{
 }
 
 /* about section */
-.interludeImage{
+.test{
+    width: 100vw;
     height: auto;
 }
 

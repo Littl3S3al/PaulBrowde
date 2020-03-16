@@ -28,10 +28,6 @@ video{
     overflow: hidden;
     height: 30vh;
 }
-.test{
-    width: 100vw;
-    height: auto;
-}
 
 /* My philosophy section */
 .headshot{

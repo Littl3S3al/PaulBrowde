@@ -273,6 +273,7 @@ a.card, a.card:active, a.card:hover, a.card:focus, a.card:visited{
 }
 .icon{
     width: 23%;
+    cursor: pointer;
 }
 .footer-links a {
     color: #1b3247;
@@ -328,6 +329,28 @@ input:focus, select:focus, textarea:focus, button:focus {
 }
 .popup form input{
     margin: 5px 0;
+}
+.closeIframe{
+    width: 3vw;
+    z-index: 200;
+    float: right;
+    margin: 20px;
+}
+.response{
+    position: fixed;
+    width: 80vw;
+    height: 80vh;
+    top: 10vh;
+    left: 10vw;
+    padding: 20px;
+    border-radius: 5px;
+}
+.submitted{
+    width: 100%;
+    height: 80%;
+    border: none;
+    border-radius: 5px;
+    overflow-y: scroll;
 }
 
 

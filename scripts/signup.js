@@ -3,16 +3,11 @@ const popupWrapper = document.querySelector('.popupWrapper');
 const popup = document.querySelector('.popup');
 const cancel = document.querySelector('.signupCancel');
 const form = document.querySelector('.popupWrapper form');
-let repeat = false;
+const submitted = document.querySelector('.response');
 
 // open popup on click of sign up button
 signupBtn.addEventListener('click', () => {
     popupWrapper.classList.remove('d-none');
-    if(repeat){
-        setTimeout(() => {
-            popupWrapper.classList.add('d-none');
-        }, 2000);
-    };
 });
 
 // stop event bubbling
@@ -32,41 +27,9 @@ cancel.addEventListener('click', () => {
 })
 
 // actions for when the user submits
-form.addEventListener('submit', e => {
-    e.preventDefault;
-
-    // create thank you confirmation screen
-    popup.innerHTML = 
-    `
-        <h2 class="text-white">Thanks, ${form.name.value}!</h2>
-        <p class="text-white">You will receive an email confirming your subscription shortly.</p>
-    `;
-    if(screen.width < 1200){
-        popup.style.paddingTop = '25vh';
-    } else{
-        popup.style.paddingTop = '20vh';
-    };
-    
-    setTimeout(() => {
-        popupWrapper.classList.add('d-none');
-    }, 2000);
-
-    repeat = true;
-
-    // submit result to the database
-    const now = new Date();
-    const subscriber = {
-        name: form.name.value,
-        email: form.email.value,
-        date: firebase.firestore.Timestamp.fromDate(now)
-    };
-
-    db.collection('mailingList').add(subscriber).then(() => {
-        // console.log('subscriber added');
-    }).catch(err => {
-        // console.log(err);
-    });
-
-    // need to send an email using node.js
+form.addEventListener('submit', () => {
+    submitted.classList.remove('d-none');
+    popupWrapper.classList.add('d-none');
+    console.log('message')
 })
 

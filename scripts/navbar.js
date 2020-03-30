@@ -76,4 +76,24 @@ menuList.forEach(link => {
          window.location.assign(`${src}`)
         };
     })
+});
+
+
+
+const emailIcon = document.querySelector("body > div.footer.grey.p-5.text-center > div.row.text-center.my-5 > div > div.col-xs-3.p-2.icon.email.d-inline-block");
+const locationIcon = document.querySelector("body > div.footer.grey.p-5.text-center > div.row.text-center.my-5 > div > div.col-xs-3.p-2.icon.location.d-inline-block")
+const phoneIcon = document.querySelector("body > div.footer.grey.p-5.text-center > div.row.text-center.my-5 > div > div.col-xs-3.p-2.icon.phone.d-inline-block")
+const facebookIcon = document.querySelector("body > div.footer.grey.p-5.text-center > div.row.text-center.my-5 > div > div.col-xs-3.p-2.icon.facebook.d-inline-block");
+
+emailIcon.addEventListener('click', () => {
+    window.open("mailto:pbrowde@mac.com", '_blank');
+});
+locationIcon.addEventListener('click', () => {
+    window.open("https://www.google.com/maps?ll=40.800375,-73.9719&z=17&t=m&hl=en&gl=ZA&mapclient=embed&q=865+West+End+Ave+New+York,+NY+10025+USA", '_blank');
+});
+phoneIcon.addEventListener('click', () => {
+    window.open('tel:212-678-0221')
+});
+facebookIcon.addEventListener('click', () => {
+    window.open('https://www.facebook.com/Paul-Browde-MD-1265896523584920/?ref=your_pages', '_blank')
 })

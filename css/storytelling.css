@@ -16,7 +16,7 @@
 }
 .layer-1-image{
     flex-shrink: 0;
-    height: 100%;
+    width: 100%;
 }
 .layer2{
     position: absolute;

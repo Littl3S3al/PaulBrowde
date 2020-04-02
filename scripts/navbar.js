@@ -61,7 +61,7 @@ menuBtnTablet.addEventListener('click', () => {
 });
 
 menuContainer.addEventListener('click', e => {
-    closeMenu(menuBtn);
+    closeMenu(menuBtnTablet);
 });
 
 

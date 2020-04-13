@@ -53,4 +53,7 @@ No media query for `xs` since this is the default in Bootstrap */
     .contactIcon{
         width: 4vw;
     }
+    .map{
+        height: 70vh;
+    }
 }

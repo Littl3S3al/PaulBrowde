@@ -92,7 +92,7 @@ No media query for `xs` since this is the default in Bootstrap */
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {   
     .workDes{
-        height: 60vh;
+        height: 80vh;
     }
 
 }

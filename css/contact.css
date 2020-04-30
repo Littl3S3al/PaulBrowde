@@ -33,7 +33,7 @@ No media query for `xs` since this is the default in Bootstrap */
         width: 8vw;
     }
     .line2{
-        transform: translateY(1.5vw);
+        transform: translateY(0.9vw);
     }
     .map{
         height: 40vh;
